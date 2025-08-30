@@ -24,7 +24,9 @@ interface EducationProps {
   visa: string;
 }
 
-export default function Education({ education, languages, visa }: EducationProps) {
+export default function Education({ education, languages, 
+  // visa
+ }: EducationProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -246,7 +248,7 @@ export default function Education({ education, languages, visa }: EducationProps
               </div>
               
               {/* Enhanced visa section */}
-              <motion.div 
+              {/* <motion.div 
                 className="border-t border-white/20 pt-6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -260,7 +262,7 @@ export default function Education({ education, languages, visa }: EducationProps
                 <p className="text-gray-300 bg-white/5 p-4 rounded-lg border border-white/10">
                   {visa}
                 </p>
-              </motion.div>
+              </motion.div> */}
             </div>
           </InteractiveCard>
         </div>

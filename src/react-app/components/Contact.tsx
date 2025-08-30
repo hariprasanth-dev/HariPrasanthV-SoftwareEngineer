@@ -163,7 +163,7 @@ export default function Contact({ data }: ContactProps) {
                   href={method.href}
                   target={method.href.startsWith('http') ? '_blank' : undefined}
                   rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className={`contact-item block p-6 relative group transition-all duration-300 ${method.hoverColor}`}
+                  className={`contact-item block min-h-[204px] p-6 relative group transition-all duration-300 ${method.hoverColor}`}
                   whileHover={{
                     y: -5,
                     boxShadow: "0 20px 40px rgba(0,0,0,0.3)"

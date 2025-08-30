@@ -5,7 +5,7 @@ export const resumeData = {
     location: "Tirupur, TN, India - 641605",
     email: "hari.prasanth.v.dev@gmail.com",
     phone: "+91 82709 89679",
-    linkedin: "Hari Prasanth V",
+    linkedin: "v-hari-prasanth",
     github: "hariprasanth-dev"
   },
   
@@ -43,26 +43,36 @@ export const resumeData = {
     location: "Coimbatore, TN, India",
     period: "September 2021 - April 2024",
     cgpa: "7.2/10",
-    note: "Bachelor's degree in Computer Applications (equivalent to Bachelor's in Computer Science in Germany – per Anabin H+ recognition)"
+    // note: "Bachelor's degree in Computer Applications (equivalent to Bachelor's in Computer Science in Germany – per Anabin H+ recognition)"
+    note: "Blended business management with technical expertise in full-stack development. Gained proficiency in web technologies, databases, and software engineering principles, applying them in hands-on projects. Equipped to bridge business and tech solutions effectively in a global software engineering role."
+
   },
   
   languages: [
     { name: "Tamil", level: "Native" },
     { name: "English", level: "Fluent (C1)" },
-    { name: "German", level: "Beginner (A1)", note: "currently learning towards B2" }
+    { name: "German", level: "Beginner (A1)", note: "currently learning towards B2" },
+    { name: "Japanese", level: "Beginner (N5)", note: "currently learning towards N2" }
+
   ],
   
   projects: [
     {
       name: "LeadSynQ",
-      period: "August 2024 - December 2024",
+      period: "August 2024 - January 2024",
       description: "Built and maintained LeadSynQ, a SaaS platform serving 10K+ active users, developing scalable microservices and features using React.js, Node.js, TypeScript, and REST APIs. Reduced API latency by 30%, improved platform performance, and delivered features on schedule using Agile/Scrum, CI/CD pipelines, and AWS cloud services.",
       link: "https://www.leadsynq.com/"
     },
     {
       name: "Vigilance",
-      period: "January 2025 - July 2025",
+      period: "March 2025 - August 2025",
       description: "Developed and maintained a European SaaS product using React.js, Node.js, TypeScript, Docker, Kubernetes, AWS/Azure, and CI/CD pipelines in an Agile team. Built scalable microservices, improved performance, and streamlined deployments for faster, more reliable releases."
+    },
+    {
+      name: "Data Flow",
+      period: "February 2025 - March 2025",
+      description: "Data Management Web App built with React, featuring Dashboard, Analytics, Reports, Data Sources, and Role-Based Access Control. Secure, modular, and scalable, it empowers teams to visualize insights, manage data, and generate reports with ease. Perfect for data-driven organizations seeking an intuitive and customizable platform.",
+      link: "https://dataflow-six.vercel.app/"
     }
   ],
   
