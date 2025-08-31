@@ -73,6 +73,12 @@ export const resumeData = {
       period: "February 2025 - March 2025",
       description: "Data Management Web App built with React, featuring Dashboard, Analytics, Reports, Data Sources, and Role-Based Access Control. Secure, modular, and scalable, it empowers teams to visualize insights, manage data, and generate reports with ease. Perfect for data-driven organizations seeking an intuitive and customizable platform.",
       link: "https://dataflow-six.vercel.app/"
+    },
+    {
+      name: "Dev Quality Pro",
+      period: "June 2025 - July 2025",
+      description: "A development-quality web app built with React and Tailwind CSS, showcasing clean code, testing practices, and deployment on Netlify.",
+      link: "https://devquality.netlify.app/"
     }
   ],
   
