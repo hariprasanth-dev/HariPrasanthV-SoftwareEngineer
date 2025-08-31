@@ -79,6 +79,12 @@ export const resumeData = {
       period: "June 2025 - July 2025",
       description: "A development-quality web app built with React and Tailwind CSS, showcasing clean code, testing practices, and deployment on Netlify.",
       link: "https://devquality.netlify.app/"
+    },
+    {
+      name: "Cloud Forge",
+      period: "September 2025 - October 2025",
+      description: "A modern, responsive frontend project showcasing cloud deployment concepts. Built with a clean UI and deployed on Netlify, it demonstrates how cloud-native applications can be structured and presented. This project focuses on frontend development, serving as a foundation for integrating backend services or cloud APIs in the future.",
+      link: "https://cloud-forge-dev.netlify.app/"
     }
   ],
   
