@@ -1,7 +1,6 @@
 ## Hari Prasanth V - Full Stack Developer
 
-This app was created using https://getmocha.com.
-Need help or want to join the community? Join our [Discord](https://discord.gg/shDEGBSe2d).
+Portfolio created with love
 
 To run the devserver:
 ```
