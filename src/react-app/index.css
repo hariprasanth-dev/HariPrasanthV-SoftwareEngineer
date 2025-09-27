@@ -13,6 +13,11 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+   /* Fix for mobile scroll glitch */
+  background-color: #1f2937; /* your main background */
+  will-change: background;
+  transform: translateZ(0);
 }
 .font-mono {
   font-family: "JetBrains Mono", Monaco, "Cascadia Code", "Roboto Mono",
