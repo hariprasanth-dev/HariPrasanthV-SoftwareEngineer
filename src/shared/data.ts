@@ -1,6 +1,6 @@
 export const resumeData = {
   personal: {
-    name: "Hari Prasanth V",
+    name: "Hari Prasanth",
     title: "Full Stack Developer",
     location: "Tirupur, TN, India - 641605",
     email: "hari.prasanth.v.dev@gmail.com",

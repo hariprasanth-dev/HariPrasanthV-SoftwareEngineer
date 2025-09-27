@@ -134,43 +134,51 @@ export default function Header({ data }: HeaderProps) {
 
       <div className="relative z-10 text-center px-8 max-w-4xl mx-auto">
         <motion.h1
-          ref={nameRef}
-          className="text-6xl md:text-8xl font-bold text-white mb-6 font-mono relative"
-          initial={{ opacity: 0, y: 50, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
-          <span className="relative inline-block">
-            {data.name.split("").map((char, index) => (
-              <motion.span
-                key={index}
-                className="inline-block"
-                initial={{ opacity: 0, y: 50, rotateX: -90 }}
-                animate={{ opacity: 1, y: 0, rotateX: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: index * 0.05,
-                  ease: "easeOut",
-                }}
-                whileHover={{
-                  scale: 1.1,
-                  color: "#3b82f6",
-                  textShadow: "0 0 20px rgba(59, 130, 246, 0.5)",
-                  transition: { duration: 0.2 },
-                }}
-              >
-                {char === " " ? "\u00A0" : char}
-              </motion.span>
-            ))}
-          </span>
-          {/* Animated underline */}
-          <motion.div
-            className="absolute bottom-[-10px] left-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500"
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
-          />
-        </motion.h1>
+  ref={nameRef}
+  className="text-5xl sm:text-6xl md:text-8xl font-bold text-white mb-6 font-mono leading-tight"
+  initial={{ opacity: 0, y: 50, scale: 0.9 }}
+  animate={{ opacity: 1, y: 0, scale: 1 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  <span className="relative inline-block">
+    {data.name.split(" ").map((word, wordIndex) => (
+      <span key={wordIndex} className="inline-block">
+        {word.split("").map((char, charIndex) => (
+          <motion.span
+            key={charIndex}
+            className="inline-block"
+            initial={{ opacity: 0, y: 50, rotateX: -90 }}
+            animate={{ opacity: 1, y: 0, rotateX: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: charIndex * 0.05 + wordIndex * 0.2,
+              ease: "easeOut",
+            }}
+            whileHover={{
+              scale: 1.1,
+              color: "#3b82f6",
+              textShadow: "0 0 20px rgba(59, 130, 246, 0.5)",
+              transition: { duration: 0.2 },
+            }}
+          >
+            {char}
+          </motion.span>
+        ))}
+        {/* Add explicit space after each word */}
+        {wordIndex < data.name.split(" ").length - 1 ? "\u00A0" : ""}
+      </span>
+    ))}
+  </span>
+
+  {/* Animated underline */}
+  <motion.div
+    className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"
+    initial={{ width: 0 }}
+    animate={{ width: "100%" }}
+    transition={{ duration: 2, delay: 1, ease: "easeInOut" }}
+  />
+</motion.h1>
+
 
         <motion.p
           ref={titleRef}
