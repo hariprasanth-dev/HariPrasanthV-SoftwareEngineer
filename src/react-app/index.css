@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Root font */
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* HTML smooth scroll */
 html {
   scroll-behavior: smooth;
 }
+
 
 /* Body styling with mobile scroll glitch fix */
 body {
@@ -37,7 +36,6 @@ body {
   }
 }
 
-/* Monospace font utility */
 .font-mono {
   font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 }
