@@ -22,38 +22,66 @@ export const resumeData = {
     "Passionate about solving complex engineering challenges and contributing to global software products, I bring adaptability, continuous learning, and a commitment to building impactful, user-centric solutions.",
 
     
-  technicalSkills: {
-    frontend: [
-      "React.js",
-      "Next.js",
-      "JavaScript (ES6+)",
-      "TypeScript",
-      "HTML5",
-      "CSS3",
-      "Bootstrap",
-      "Tailwind CSS",
-    ],
-    backend: ["Node.js", "Express.js", "Django", "PHP", "Python"],
-    databases: ["MySQL", "MongoDB"],
-    cloudDevOps: [
-      "AWS (Basic)",
-      "Docker",
-      "Kubernetes (Familiar)",
-      "Microservices",
-    ],
-    testingTools: [
-      "CI/CD Pipelines",
-      "Git",
-      "GitHub",
-      "VS Code",
-      "Postman",
-      "REST APIs",
-      "Unit Testing (Jest)",
-      "Selenium",
-      "Agile (Scrum)",
-    ],
-    coreCompetencies: ["Problem Solving", "Team Collaboration"],
-  },
+  technicalSkills : {
+  frontend: [
+    "React.js",
+    "Next.js",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Bootstrap",
+  ],
+  backend: [
+    "Node.js",
+    "Express.js",
+    "Python",
+    "Django",
+    "Java",
+    "Spring Boot",
+    "PHP",
+  ],
+  databases: [
+    "PostgreSQL",
+    "MongoDB",
+    "MySQL",
+    "Firebase (Basic)",
+    "DynamoDB (Basic)",
+  ],
+  cloudDevOps: [
+    "AWS",
+    "Azure",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Microservices",
+  ],
+  testingTools: [
+    "CI/CD Pipelines",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Postman",
+    "REST APIs",
+    "Unit Testing (Jest)",
+    "Selenium",
+    "Agile (Scrum)",
+  ],
+  coreCompetencies: [
+    "Problem Solving",
+    "Team Collaboration",
+    "Agile Methodologies",
+    "Communication Skills",
+  ],
+  emergingSkills: [
+    "Machine Learning",
+    "Generative AI",
+    "Data Infrastructure Tools (Snowflake, Databricks)",
+    "Cybersecurity Basics",
+  ],
+},
+
 
   workExperience: [
     {
