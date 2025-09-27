@@ -2,22 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root font */
 :root {
   font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+/* HTML smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
+/* Body styling with mobile scroll glitch fix */
 body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Background settings */
+  background-color: #1f2937; /* Solid color fallback */
+  will-change: background; /* Hint to browser for smooth rendering */
+  transform: translateZ(0); /* Force GPU acceleration */
 }
 
+/* Mobile-specific fixes */
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: auto; /* Avoid smooth scroll glitch */
+  }
+
+  body {
+    background-attachment: scroll; /* Avoid fixed background flash */
+  }
+}
+
+/* Monospace font utility */
 .font-mono {
   font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
 }
