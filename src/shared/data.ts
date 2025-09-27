@@ -9,9 +9,19 @@ export const resumeData = {
     github: "hariprasanth-dev",
   },
 
-  summary:
-    "Full Stack Developer with 1+ years of experience building enterprise‑grade SaaS applications using React.js, Next.js, Node.js, TypeScript, and JavaScript (ES6+). Skilled in REST API integration, microservices architecture, and cloud‑native technologies (AWS, Docker, Kubernetes). Proficient in implementing CI/CD pipelines and delivering scalable, high‑performance web solutions in Agile/Scrum environments. Strong problem‑solving skills with a track record of producing clean, maintainable, and efficient code for both frontend and backend systems.",
+  // summary:
+  //   "Full Stack Developer with 1+ years of experience building enterprise‑grade SaaS applications using React.js, Next.js, Node.js, TypeScript, and JavaScript (ES6+). Skilled in REST API integration, microservices architecture, and cloud‑native technologies (AWS, Docker, Kubernetes). Proficient in implementing CI/CD pipelines and delivering scalable, high‑performance web solutions in Agile/Scrum environments. Strong problem‑solving skills with a track record of producing clean, maintainable, and efficient code for both frontend and backend systems.",
 
+  summary:
+    'Full Stack Developer with 1+ years of experience designing and building enterprise SaaS applications using React.js, Next.js, Node.js, TypeScript, and modern JavaScript (ES6+).',
+
+  summary2:
+    "I specialize in scalable microservices, REST API integration, and cloud-native deployments with AWS, Docker, and Kubernetes. Skilled in CI/CD automation and Agile collaboration, I focus on delivering clean, efficient, and high-performance solutions across both frontend and backend systems.",
+
+  summary3:
+    "Passionate about solving complex engineering challenges and contributing to global software products, I bring adaptability, continuous learning, and a commitment to building impactful, user-centric solutions.",
+
+    
   technicalSkills: {
     frontend: [
       "React.js",
