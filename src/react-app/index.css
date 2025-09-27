@@ -1,59 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
-
-/* Body styling with mobile scroll glitch fix */
 body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Background settings */
-  background-color: #1f2937; /* Solid color fallback */
-  will-change: background; /* Hint to browser for smooth rendering */
-  transform: translateZ(0); /* Force GPU acceleration */
 }
-
-/* Mobile-specific fixes */
-@media (max-width: 768px) {
-  html {
-    scroll-behavior: auto; /* Avoid smooth scroll glitch */
-  }
-
-  body {
-    background-attachment: scroll; /* Avoid fixed background flash */
-  }
-}
-
 .font-mono {
-  font-family: 'JetBrains Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-}
-
-/* Custom scrollbar */
+  font-family: "JetBrains Mono", Monaco, "Cascadia Code", "Roboto Mono",
+    Consolas, "Courier New", monospace;
+} /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
   background: #1f2937;
 }
-
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #2563eb, #7c3aed);
 }
