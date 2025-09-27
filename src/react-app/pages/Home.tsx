@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useState } from "react";
 
 import Header from "@/react-app/components/Header";
 import About from "@/react-app/components/About";
@@ -12,44 +10,35 @@ import Contact from "@/react-app/components/Contact";
 import GeometricBackground from "@/react-app/components/3d/GeometricBackground";
 
 import { resumeData } from "@/shared/data";
-
-// Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger);
+import IntroPage from "@/react-app/components/3d/IntroPage";
 
 export default function Home() {
-  useEffect(() => {
-    // Smooth scrolling configuration
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Refresh ScrollTrigger when component mounts
-    ScrollTrigger.refresh();
-
-    // Cleanup function
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  const [showIntro, setShowIntro] = useState(true);
 
   return (
-    <div className="font-sans relative">
-      {/* Global 3D Background */}
-      <GeometricBackground />
-
-      <Header data={resumeData.personal} />
-      <About
-        summary={resumeData.summary}
-        summary2={resumeData.summary2}
-        summary3={resumeData.summary3}
-      />
-      <Skills skills={resumeData.technicalSkills} />
-      <Experience experiences={resumeData.workExperience} />
-      <Projects projects={resumeData.projects} />
-      <Education
-        education={resumeData.education}
-        languages={resumeData.languages}
-        visa={resumeData.visa}
-      />
-      <Contact data={resumeData.personal} />
+    <div className="font-sans relative overflow-hidden min-h-screen">
+      {showIntro ? (
+        <IntroPage onFinish={() => setShowIntro(false)} data={resumeData.personal} />
+      ) : (
+        <div>
+          <GeometricBackground />
+          <Header data={resumeData.personal} />
+          <About
+            summary={resumeData.summary}
+            summary2={resumeData.summary2}
+            summary3={resumeData.summary3}
+          />
+          <Skills skills={resumeData.technicalSkills} />
+          <Experience experiences={resumeData.workExperience} />
+          <Projects projects={resumeData.projects} />
+          <Education
+            education={resumeData.education}
+            languages={resumeData.languages}
+            visa={resumeData.visa}
+          />
+          <Contact data={resumeData.personal} />
+        </div>
+      )}
     </div>
   );
 }
