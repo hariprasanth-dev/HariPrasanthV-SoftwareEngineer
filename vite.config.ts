@@ -1,22 +1,25 @@
-import path from "path";
-import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
-// import { cloudflare } from "@cloudflare/vite-plugin";
-import { mochaPlugins } from "@getmocha/vite-plugins";
+import path from "path";
+import { defineConfig, loadEnv } from "vite";
 
-export default defineConfig({
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  // plugins: [...mochaPlugins(process.env as any), react(), cloudflare()],
-  plugins: [...mochaPlugins(process.env as any), react()],
-  server: {
-    allowedHosts: true,
-  },
-  build: {
-    chunkSizeWarningLimit: 5000,
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, ".", "");
+  return {
+    plugins: [react(), tailwindcss()],
+    define: {
+      "process.env.GEMINI_API_KEY": JSON.stringify(env.GEMINI_API_KEY),
     },
-  },
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "."),
+      },
+    },
+    server: {
+      // HMR is disabled in AI Studio via DISABLE_HMR env var.
+      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+      hmr: process.env.DISABLE_HMR !== "true",
+      allowedHosts: true,
+    },
+  };
 });

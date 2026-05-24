@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-bg-primary: #f9fafb;
+  --color-bg-surface: #ffffff;
+  --color-bg-elevated: #f3f4f6;
+
+  --color-border-subtle: #e5e7eb;
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
+
+  --color-accent-primary: #008252;
+  --color-accent-hover: #006e45;
+  --color-accent-dim: rgba(0, 130, 82, 0.08);
+
+  --color-error-primary: #dc2626;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #0a0a0a;
+    --color-bg-surface: #111111;
+    --color-bg-elevated: #1a1a1a;
+
+    --color-border-subtle: #222222;
+
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #aaaaaa;
+    --color-text-muted: #666666;
+
+    --color-accent-primary: #00a86b;
+    --color-accent-hover: #00c97f;
+    --color-accent-dim: rgba(0, 168, 107, 0.1);
+
+    --color-error-primary: #e5534b;
+  }
+}
+
+:root.dark {
+  --color-bg-primary: #0a0a0a;
+  --color-bg-surface: #111111;
+  --color-bg-elevated: #1a1a1a;
+
+  --color-border-subtle: #222222;
+
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #aaaaaa;
+  --color-text-muted: #666666;
+
+  --color-accent-primary: #00a86b;
+  --color-accent-hover: #00c97f;
+  --color-accent-dim: rgba(0, 168, 107, 0.1);
+
+  --color-error-primary: #e5534b;
+}
+
+:root.light {
+  --color-bg-primary: #f9fafb;
+  --color-bg-surface: #ffffff;
+  --color-bg-elevated: #f3f4f6;
+
+  --color-border-subtle: #e5e7eb;
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
+
+  --color-accent-primary: #008252;
+  --color-accent-hover: #006e45;
+  --color-accent-dim: rgba(0, 130, 82, 0.08);
+
+  --color-error-primary: #dc2626;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-bg-primary: var(--color-bg-primary);
+  --color-bg-surface: var(--color-bg-surface);
+  --color-bg-elevated: var(--color-bg-elevated);
+
+  --color-border-subtle: var(--color-border-subtle);
+
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+
+  --color-accent-primary: var(--color-accent-primary);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-dim: var(--color-accent-dim);
+
+  --color-error-primary: var(--color-error-primary);
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary font-sans selection:bg-accent-primary/30;
+    scroll-behavior: smooth;
+    /* cursor: none; */
+  }
+
+  body,
+  body *,
+  input,
+  textarea {
+    transition-property: background-color, border-color, color, text-decoration-color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-mono tracking-tight;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[98%] mx-auto px-6 md:px-12 py-24;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-accent-primary hover:bg-accent-hover text-black font-bold transition-all duration-200 uppercase text-xs tracking-widest rounded-sm;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-border-subtle hover:border-accent-primary text-text-primary font-bold transition-all duration-200 uppercase text-xs tracking-widest rounded-sm bg-transparent;
+  }
+
+  .card-surface {
+    @apply bg-bg-surface border border-border-subtle hover:border-accent-primary/20 transition-all duration-300 rounded-lg;
+  }
+}
+
+/* Custom scroll bar for minimalist look */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-subtle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

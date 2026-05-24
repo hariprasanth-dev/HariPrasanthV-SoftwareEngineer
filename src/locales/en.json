@@ -1,0 +1,221 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "available": "Available for work"
+  },
+  "hero": {
+    "title1": "Frontend Engineer.",
+    "title2": "Precision. Performance. Product.",
+    "cta_cv": "Download CV",
+    "cta_projects": "View Projects",
+    "badge_blue_card": "EU Blue Card Eligible · Open to Relocation",
+    "description": "Frontend Engineer — React · Next.js · TypeScript. Delivering high-performance interfaces with engineering rigour.",
+    "stats": {
+      "exp": "2+ Years Production Experience",
+      "apps": "3 Live Applications",
+      "perf": "~40% Performance Gains Delivered"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "description_p1": "I am a Frontend Engineer dedicated to building high-performance, accessible, and inclusive digital products. My expertise lies in architecting production-grade React and Next.js applications that bridge the gap between engineering rigour and intuitive user experiences.",
+    "description_p2": "With a background in delivering production systems for real estate and e-commerce, I specialize in DOM virtualization, performance auditing, and ensuring sub-second response times even with massive datasets.",
+    "ownership": "Every line of code, every UI decision, every CI/CD pipeline configuration, and every deployment in my portfolio was designed, written, and shipped by me — independently.",
+    "german_market": "I am seeking a senior frontend engineering role at a German technology company where engineering rigour, clean architecture, and measurable outcomes are the standard.",
+    "languages": "Languages"
+  },
+  "skills": {
+    "title": "Technical Skills"
+  },
+  "projects": {
+    "title": "Project Showroom",
+    "subtitle": "Production work. Real clients. Measurable outcomes.",
+    "challenge": "The Challenge:",
+    "approach": "The Approach:",
+    "impact": "Impact",
+    "btn_deep_dive": "Technical Deep Dive ↓",
+    "btn_visit": "Visit Website",
+    "btn_arch": "View Architecture"
+  },
+  "deep_dives": {
+    "title": "Technical Deep Dives",
+    "subtitle": "The architecture decisions behind the work — and the reasoning that drove them.",
+    "heading": "Architectural Reasoning",
+    "why": "Why this architecture?",
+    "tradeoffs": "Trade-offs considered",
+    "rejected": "Why Rejected",
+    "chosen": "Why Chosen",
+    "option": "Option Considered",
+    "differently": "What I would do differently",
+    "code": "Code Snippet"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "note": "All production projects listed above were delivered during this role."
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "edu_heading": "Education",
+    "cert_heading": "Certifications"
+  },
+  "contact": {
+    "title": "Let's Build Something.",
+    "subtitle": "Available for senior frontend engineering roles in Germany. EU Blue Card eligible. 15-day notice period.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "[SUCCESS] Message transmitted successfully.",
+      "error": "[ERROR] Something went wrong. Please try again.",
+      "connection_error": "[ERROR] Failed to connect to the server.",
+      "placeholder_name": "HANS MÜLLER",
+      "placeholder_email": "HANS.M@COMPANY.DE",
+      "placeholder_message": "GUTEN TAG..."
+    },
+    "german_commitment": "Currently learning German · Targeting B2 · Committed to long-term contribution in the German tech ecosystem."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "stack": "Built with React · TypeScript · Tailwind CSS"
+  },
+  "portfolio": {
+    "personalInfo": {
+      "roleTitle": "Frontend Engineer — React · Next.js · TypeScript",
+      "location": "Tiruppur, India · Open to relocation to Germany",
+      "visaStatus": "Indian citizen · EU Blue Card eligible · Visa sponsorship required",
+      "workMode": "On-site, Hybrid, or Remote — fully flexible"
+    },
+    "projects": {
+      "crayoon": {
+        "type": "Enterprise Uniform Management & E-Commerce Platform",
+        "client": "ApplogiQ (Production Client)",
+        "problem": "Schools and corporate clients had no unified system to manage uniform catalogues, size allocations, and order fulfilment — leading to manual errors and slow delivery cycles.",
+        "approach": [
+          "Architected a full-scale uniform management and e-commerce system.",
+          "Built 20+ reusable React components shared across web and mobile platforms.",
+          "Integrated FastAPI backend for real-time order handling and inventory updates.",
+          "Co-authored a Jest + React Testing Library strategy for 100% core form coverage."
+        ],
+        "impact": [
+          { "label": "UI Dev Time", "value": "↓ 30%" },
+          { "label": "Regression Confidence", "value": "↑ 60%" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "I chose Next.js for its built-in routing and SEO capabilities for the public-facing catalogue, while keeping the internal management dashboard strictly as a client-side layout to optimize for state-heavy uniform customizers.",
+          "tradeoffs": [
+            {
+              "considered": "Redux for state",
+              "whyRejected": "Overhead of boilerplate for rapid development cycle",
+              "whyChosen": "React Query + Context API"
+            }
+          ],
+          "wouldDoDifferently": "I would have introduced a monorepo structure earlier to share types more seamlessly between the FastAPI backend and the React frontend."
+        }
+      },
+      "vigilance": {
+        "type": "Security Assessment & Reporting System",
+        "client": "ApplogiQ (Production Client)",
+        "problem": "Field managers were using paper-based tools for property security assessments, resulting in slow, error-prone report generation on mobile devices.",
+        "approach": [
+          "Engineered a data-driven web application for conducting risk assessments.",
+          "Implemented DOM virtualization and lazy loading for large datasets (1000+ records).",
+          "Designed interactive dashboards and multi-step form workflows."
+        ],
+        "impact": [
+          { "label": "Mobile Report Load", "value": "↓ 40%" },
+          { "label": "Data Entry Accuracy", "value": "↑ 95%" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "I chose DOM virtualization over infinite scroll because the assessment tables required consistent sorting across thousands of rows without triggering multiple network requests on field-strength mobile networks.",
+          "tradeoffs": [
+            {
+              "considered": "Standard Table",
+              "whyRejected": "Mobile performance degraded with 500+ records",
+              "whyChosen": "Virtualized List"
+            }
+          ],
+          "wouldDoDifferently": "Implement offline-first capability using PWA features to handle field assessments in areas with zero connectivity."
+        }
+      },
+      "shopq": {
+        "type": "SaaS E-Commerce Landing & Conversion Interface",
+        "client": "ApplogiQ (Production Client)",
+        "problem": "The client needed a high-conversion landing platform to support a go-to-market launch for their catalog management system.",
+        "approach": [
+          "Delivered a responsive, component-driven UI with React.js and Bootstrap.",
+          "Implemented validated lead-capture forms and interactive product demos.",
+          "Optimized user flows for demo-booking conversions."
+        ],
+        "impact": [
+          { "label": "Conversion Rate", "value": "↑ 25%" },
+          { "label": "Cross-Device Compatibility", "value": "100%" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "I chose Bootstrap for this specific landing page because of the requirement for rapid prototyping and leveraging a massive library of pre-built conversion components to meet a strict 2-week go-to-market deadline.",
+          "tradeoffs": [
+            {
+              "considered": "Custom CSS",
+              "whyRejected": "Time-to-market constraints",
+              "whyChosen": "Bootstrap Utility Layer"
+            }
+          ],
+          "wouldDoDifferently": "I would use Tailwind CSS instead of Bootstrap for better control over the design tokens and a smaller final CSS bundle size."
+        }
+      }
+    },
+    "skillGroups": {
+      "frontend": "Frontend",
+      "styling": "Styling",
+      "stateData": "State & Data",
+      "testing": "Testing",
+      "backendApis": "Backend / APIs",
+      "infrastructure": "Infrastructure",
+      "tooling": "Tooling",
+      "performance": "Performance"
+    },
+    "experience": [
+      {
+        "title": "Software Engineer — Frontend",
+        "company": "ApplogiQ",
+        "location": "Tiruppur, India",
+        "period": "Jul 2024 – Present",
+        "responsibilities": [
+          "Developed production-ready frontend solutions across real estate, SaaS, healthcare, and e-commerce verticals.",
+          "Integrated FastAPI-based REST APIs across 3 live production applications, shipping priority features on schedule.",
+          "Maintained cross-browser compatibility and component-based UI architecture.",
+          "Configured CI/CD pipelines using GitHub Actions to automate build and testing workflows."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration with Computer Applications",
+        "institution": "RVS College of Arts and Science",
+        "location": "Coimbatore, India",
+        "period": "Sep 2021 – Apr 2024",
+        "notes": "Coursework included programming concepts, web technologies, database management, and IT systems."
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Full-Stack Web Developer Certification",
+        "issuer": "SkillVertex",
+        "period": "Mar 2023 – Jun 2023",
+        "topics": ["React.js", "Responsive UI Design", "REST API Integration"]
+      }
+    ],
+    "languages": {
+      "tamil": { "name": "Tamil", "level": "Native" },
+      "english": { "name": "English", "level": "Professional (B2+)" },
+      "german": { "name": "German", "level": "Beginner (A1)" },
+      "hindi": { "name": "Hindi", "level": "Conversational" }
+    }
+  }
+}
