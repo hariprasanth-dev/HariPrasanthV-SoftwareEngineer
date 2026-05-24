@@ -13,7 +13,8 @@ const Hero = () => {
       <div
         className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(var(--color-text-primary) 1px, transparent 1px)",
+          backgroundImage:
+            "radial-gradient(var(--color-text-primary) 1px, transparent 1px)",
           backgroundSize: "32px 32px",
         }}
       />
@@ -53,8 +54,9 @@ const Hero = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/public/Hari_Prasanth_Resume.pdf";
-                link.download = "Hari_prasanth_Resume.pdf";
+                // Remove "/public" and just use "/"
+                link.href = "/Hari_Prasanth_Resume.pdf";
+                link.download = "Hari_Prasanth_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
