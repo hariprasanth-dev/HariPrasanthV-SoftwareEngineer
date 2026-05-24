@@ -53,7 +53,7 @@ const Hero = () => {
             <button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/public/Hari_Prasanth_V_German.pdf";
+                link.href = "/public/Hari_Prasanth_Resume.pdf";
                 link.download = "Hari_prasanth_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
