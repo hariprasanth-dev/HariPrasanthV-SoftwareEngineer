@@ -11,6 +11,7 @@ export const LanguageToggle = () => {
   const languages: { code: Locale; label: string; name: string }[] = [
     { code: 'en', label: 'EN', name: 'English' },
     { code: 'de', label: 'DE', name: 'Deutsch' },
+    { code: 'fr', label: 'FR', name: 'Français' },
     { code: 'ta', label: 'TA', name: 'Tamil' },
     { code: 'hi', label: 'HI', name: 'Hindi' },
   ];

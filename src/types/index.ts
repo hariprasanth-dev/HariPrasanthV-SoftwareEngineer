@@ -57,4 +57,4 @@ export interface Language {
   flag: string;
 }
 
-export type Locale = 'en' | 'de' | 'ta' | 'hi';
+export type Locale = 'en' | 'de' | 'ta' | 'hi' | 'fr';

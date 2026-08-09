@@ -13,7 +13,7 @@ const Skills = () => {
     <section id="skills" className="section-container">
       <SectionHeading>{t("skills.title")}</SectionHeading>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
         {SKILL_GROUPS?.map((group, idx) => (
           <motion.div
             key={group.category}
@@ -21,7 +21,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.05 }}
-            className="space-y-6"
+            className="space-y-4 sm:space-y-6 min-w-0"
           >
             <div className="flex items-center gap-3">
               <span className="text-accent-primary font-mono text-xs">

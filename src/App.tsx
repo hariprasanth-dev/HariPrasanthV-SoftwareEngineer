@@ -16,6 +16,7 @@ import ExperienceList from "./components/sections/Experience";
 import EducationCertifications from "./components/sections/EducationCertifications";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/Footer";
+import ScrollTraveler from "./components/ui/ScrollTraveler";
 import { CustomCursor } from "./components/ui/CustomCursor";
 
 const App = () => {
@@ -78,6 +79,7 @@ const App = () => {
         </a>
         {/* <CustomCursor /> */}
         <Navbar />
+        <ScrollTraveler />
 
         <main id="main-content">
           <Hero />

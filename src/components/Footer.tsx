@@ -6,11 +6,11 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-bg-surface border-t border-border-subtle py-12">
-      <div className="max-w-[1200px] mx-auto px-6 md:px-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+    <footer id="site-footer" className="bg-bg-surface border-t border-border-subtle py-12">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
           <div className="text-left">
-            <h3 className="font-mono text-lg font-bold text-text-primary mb-1">
+            <h3 className="font-mono text-base sm:text-lg font-bold text-text-primary mb-1">
               HARI PRASANTH V
             </h3>
             <p className="text-text-muted text-xs font-mono uppercase tracking-widest">
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex gap-8">
+          <div className="flex flex-wrap gap-4 sm:gap-8">
             <a
               href="#about"
               className="text-text-muted hover:text-accent-primary font-mono text-xs uppercase tracking-widest transition-colors"
@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="text-right">
+          <div className="text-left md:text-right">
             <p className="text-text-muted text-[10px] font-mono uppercase tracking-widest">
               {t("footer.stack")}
             </p>

@@ -72,10 +72,10 @@ const Contact = () => {
         {t("contact.title")}
       </SectionHeading>
 
-      <div className="grid lg:grid-cols-2 gap-20 items-start">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 xl:gap-20 items-start">
         {/* Left: Contact Info */}
-        <div className="space-y-12">
-          <div className="space-y-8">
+        <div className="space-y-8 sm:space-y-12 min-w-0">
+          <div className="space-y-4 sm:space-y-6">
             {contactLinks?.map((link) => (
               <motion.a
                 key={link.label}
@@ -85,17 +85,17 @@ const Contact = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="flex items-center gap-6 group p-4 border border-border-subtle bg-bg-surface hover:border-accent-primary transition-all overflow-hidden relative"
+                className="flex items-center gap-4 sm:gap-6 group p-3 sm:p-4 border border-border-subtle bg-bg-surface hover:border-accent-primary transition-all overflow-hidden relative"
               >
                 <div className="absolute top-0 right-0 w-1 h-full bg-accent-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="p-3 bg-bg-elevated text-accent-primary border border-border-subtle group-hover:border-accent-primary transition-colors">
+                <div className="p-2.5 sm:p-3 bg-bg-elevated text-accent-primary border border-border-subtle group-hover:border-accent-primary transition-colors shrink-0">
                   {link.icon}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-[10px] font-mono text-text-muted uppercase tracking-widest mb-1">
                     {link.label}
                   </p>
-                  <p className="text-text-primary font-mono group-hover:text-accent-primary transition-colors">
+                  <p className="text-text-primary font-mono text-sm sm:text-base group-hover:text-accent-primary transition-colors break-all">
                     {link.value}
                   </p>
                 </div>
@@ -103,7 +103,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <div className="p-8 border-l-2 border-accent-primary bg-bg-elevated">
+          <div className="p-5 sm:p-8 border-l-2 border-accent-primary bg-bg-elevated">
             <p className="text-text-secondary font-sans leading-relaxed italic text-sm">
               {t("contact.german_commitment")}
             </p>
@@ -115,7 +115,7 @@ const Contact = () => {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-bg-surface border border-border-subtle p-8 md:p-12 relative"
+          className="bg-bg-surface border border-border-subtle p-5 sm:p-8 md:p-12 relative min-w-0"
         >
           <div className="absolute top-0 left-0 w-24 h-1 bg-accent-primary" />
 

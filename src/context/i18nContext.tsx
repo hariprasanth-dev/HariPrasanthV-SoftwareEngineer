@@ -4,6 +4,7 @@ import en from '../locales/en.json';
 import de from '../locales/de.json';
 import ta from '../locales/ta.json';
 import hi from '../locales/hi.json';
+import fr from '../locales/fr.json';
 
 type Translations = typeof en;
 
@@ -13,11 +14,11 @@ interface I18nContextType {
   t: (key: string) => any;
 }
 
-const translations: Record<Locale, any> = { en, de, ta, hi };
+const translations: Record<Locale, any> = { en, de, ta, hi, fr };
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
-const SUPPORTED_LOCALES: Locale[] = ['en', 'de', 'ta', 'hi'];
+const SUPPORTED_LOCALES: Locale[] = ['en', 'de', 'ta', 'hi', 'fr'];
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
   const [locale, setLocaleState] = useState<Locale>(() => {

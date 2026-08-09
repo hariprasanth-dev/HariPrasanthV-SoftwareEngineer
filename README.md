@@ -22,7 +22,7 @@ This repository houses the entire frontend and backend server logic, leveraging 
 | **Styling** | Tailwind CSS v4, Vanilla CSS | Next-gen Tailwind styling, custom theme system with native CSS variables |
 | **Animations** | GSAP, Motion | Smooth custom cursor tracking, scroll animations, micro-interactions |
 | **State & Data** | React Context API, custom hooks | Standard light-weight data flow and centralized translation states |
-| **Localization** | Custom i18n JSON Catalogs | High-speed static translation loader supporting 4 languages |
+| **Localization** | Custom i18n JSON Catalogs | High-speed static translation loader supporting 5 languages |
 | **Backend API** | Express | Dev server routing, custom static asset serving, and secure contact API endpoints |
 | **Tooling** | Lucide React, Formik, Yup | Helper libraries for validated forms and icon packages |
 
@@ -31,7 +31,7 @@ This repository houses the entire frontend and backend server logic, leveraging 
 ## ✨ Features & Architecture Highlights
 
 ### 1. Multi-Language Localization (i18n)
-* Full translation catalogs for 4 languages: **English (`en`)**, **German (`de`)**, **Tamil (`ta`)**, and **Hindi (`hi`)**.
+* Full translation catalogs for 5 languages: **English (`en`)**, **German (`de`)**, **French (`fr`)**, **Tamil (`ta`)**, and **Hindi (`hi`)**.
 * Easily toggleable from the navbar widget, modifying the app context without reloading.
 
 ### 2. Custom CSS Variable Theme Engine
@@ -65,7 +65,7 @@ This repository houses the entire frontend and backend server logic, leveraging 
 │   ├── context/                # React i18n context & dark/light theme context providers
 │   ├── data/                   # Single source of truth data (portfolio.ts) for developer details
 │   ├── hooks/                  # Custom hooks (e.g. usePortfolioData to merge data with locales)
-│   ├── locales/                # JSON dictionaries for en, de, hi, ta translations
+│   ├── locales/                # JSON dictionaries for en, de, fr, hi, ta translations
 │   ├── types/                  # Shared TypeScript interface definitions
 │   ├── App.tsx                 # Main layout wrapper and cursor registration
 │   ├── index.css               # Main styling rules, custom scrollbars, and Tailwind v4 themes
@@ -129,6 +129,7 @@ To add or change translated text for any of the sections, edit the respective JS
 👉 [src/locales/](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/)
 * [en.json](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/en.json) (English)
 * [de.json](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/de.json) (German)
+* [fr.json](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/fr.json) (French)
 * [hi.json](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/hi.json) (Hindi)
 * [ta.json](file:///d:/Programming/portfolio/Hari_Prasanth_portfolio/src/locales/ta.json) (Tamil)
 

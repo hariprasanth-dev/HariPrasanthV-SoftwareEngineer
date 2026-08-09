@@ -12,14 +12,13 @@
     <script>
       (function () {
         const theme = localStorage.getItem('theme');
+        const root = document.documentElement;
         if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-          document.documentElement.classList.remove('light');
-          document.documentElement.style.colorScheme = 'dark';
+          root.classList.add('dark');
+          root.classList.remove('light');
         } else {
-          document.documentElement.classList.add('light');
-          document.documentElement.classList.remove('dark');
-          document.documentElement.style.colorScheme = 'light';
+          root.classList.add('light');
+          root.classList.remove('dark');
         }
       })();
     </script>

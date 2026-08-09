@@ -164,8 +164,7 @@ export const usePortfolioData = () => {
   const LANGUAGES: Language[] = [
     { name: t("portfolio.languages.tamil.name"), level: t("portfolio.languages.tamil.level"), proficiency: 100, flag: "in" },
     { name: t("portfolio.languages.english.name"), level: t("portfolio.languages.english.level"), proficiency: 85, flag: "gb" },
-    { name: t("portfolio.languages.german.name"), level: t("portfolio.languages.german.level"), proficiency: 20, flag: "de" },
-    { name: t("portfolio.languages.hindi.name"), level: t("portfolio.languages.hindi.level"), proficiency: 75, flag: "in" },
+    { name: t("portfolio.languages.french.name"), level: t("portfolio.languages.french.level"), proficiency: 25, flag: "fr" },
   ];
 
   return { PERSONAL_INFO, PROJECTS, SKILL_GROUPS, EXPERIENCE, EDUCATION, CERTIFICATIONS, LANGUAGES };

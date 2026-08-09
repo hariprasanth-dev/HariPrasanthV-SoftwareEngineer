@@ -226,6 +226,5 @@ export const CERTIFICATIONS: Certification[] = [
 export const LANGUAGES: Language[] = [
   { name: "Tamil", level: "Native", proficiency: 100, flag: "in" },
   { name: "English", level: "Professional (B2+)", proficiency: 85, flag: "gb" },
-  { name: "German", level: "Beginner (A1)", proficiency: 20, flag: "de" },
-  { name: "Hindi", level: "Conversational", proficiency: 75, flag: "in" },
+  { name: "French", level: "Beginner (A1)", proficiency: 25, flag: "fr" },
 ];

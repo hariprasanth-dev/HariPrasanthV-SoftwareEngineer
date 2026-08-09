@@ -1,0 +1,258 @@
+{
+  "nav": {
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "education": "Formation",
+    "contact": "Contact",
+    "available": "Disponible pour un poste"
+  },
+  "hero": {
+    "title1": "Ingénieur Frontend.",
+    "title2": "Précision. Performance. Produit.",
+    "cta_cv": "Télécharger le CV",
+    "cta_projects": "Voir les projets",
+    "badge_blue_card": "Éligible à la Carte Bleue UE · Ouvert à la mobilité",
+    "description": "Ingénieur Frontend — React · Next.js · TypeScript. Des interfaces haute performance avec une rigueur d'ingénierie.",
+    "stats": {
+      "exp": "2+ ans d'expérience en production",
+      "apps": "3 applications en production",
+      "perf": "~40 % de gains de performance"
+    }
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description_p1": "Je suis un ingénieur Frontend dédié à la création de produits numériques performants, accessibles et inclusifs. Mon expertise consiste à concevoir des applications React et Next.js de niveau production qui allient rigueur d'ingénierie et expériences utilisateur intuitives.",
+    "description_p2": "Fort d'une expérience dans la livraison de systèmes de production pour l'immobilier et le e-commerce, je me spécialise dans la virtualisation du DOM, l'audit de performance et la garantie de temps de réponse inférieurs à la seconde, même avec des jeux de données massifs.",
+    "ownership": "Chaque ligne de code, chaque décision d'interface, chaque configuration CI/CD et chaque déploiement de ce portfolio a été conçu, écrit et livré par moi — de façon indépendante.",
+    "german_market": "Je recherche un poste d'ingénieur frontend senior au sein d'une entreprise technologique allemande où la rigueur d'ingénierie, une architecture propre et des résultats mesurables sont la norme.",
+    "languages": "Langues"
+  },
+  "skills": {
+    "title": "Compétences techniques"
+  },
+  "projects": {
+    "title": "Vitrine de projets",
+    "subtitle": "Travail en production. Clients réels. Résultats mesurables.",
+    "challenge": "Le défi :",
+    "approach": "L'approche :",
+    "impact": "Impact",
+    "btn_deep_dive": "Analyse technique ↓",
+    "btn_visit": "Visiter le site",
+    "btn_arch": "Voir l'architecture"
+  },
+  "deep_dives": {
+    "title": "Analyses techniques",
+    "subtitle": "Les décisions d'architecture derrière le travail — et le raisonnement qui les a motivées.",
+    "heading": "Raisonnement architectural",
+    "why": "Pourquoi cette architecture ?",
+    "tradeoffs": "Compromis envisagés",
+    "rejected": "Pourquoi rejeté",
+    "chosen": "Pourquoi choisi",
+    "option": "Option envisagée",
+    "differently": "Ce que je ferais différemment",
+    "code": "Extrait de code"
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "note": "Tous les projets de production listés ci-dessus ont été livrés durant ce poste."
+  },
+  "education": {
+    "title": "Formation & Certifications",
+    "edu_heading": "Formation",
+    "cert_heading": "Certifications"
+  },
+  "contact": {
+    "title": "Construisons quelque chose.",
+    "subtitle": "Disponible pour des postes d'ingénieur frontend senior en Allemagne. Éligible à la Carte Bleue UE. Préavis de 15 jours.",
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "message": "Message",
+      "send": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "[SUCCÈS] Message transmis avec succès.",
+      "error": "[ERREUR] Une erreur s'est produite. Veuillez réessayer.",
+      "connection_error": "[ERREUR] Impossible de se connecter au serveur.",
+      "placeholder_name": "HANS MÜLLER",
+      "placeholder_email": "HANS.M@COMPANY.DE",
+      "placeholder_message": "BONJOUR..."
+    },
+    "german_commitment": "J'apprends actuellement l'allemand · Objectif B2 · Engagé pour une contribution à long terme dans l'écosystème tech allemand."
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "stack": "Construit avec React · TypeScript · Tailwind CSS"
+  },
+  "guide": {
+    "hero": {
+      "title": "Commencer ici",
+      "text": "Voici Hari — ingénieur frontend axé sur la précision, la performance et le produit."
+    },
+    "about": {
+      "title": "À propos",
+      "text": "Parcours, esprit d'ownership, et pourquoi il vise des rôles tech en Allemagne."
+    },
+    "skills": {
+      "title": "Compétences",
+      "text": "La stack de production — React, Next.js, TypeScript, tests et outillage."
+    },
+    "projects": {
+      "title": "Projets",
+      "text": "Travaux clients en production avec impact mesurable — Crayoon, Vigilance et ShopQ."
+    },
+    "deep_dives": {
+      "title": "Deep dives",
+      "text": "Choix d'architecture, compromis, et ce qu'il ferait autrement la prochaine fois."
+    },
+    "experience": {
+      "title": "Expérience",
+      "text": "Travail frontend chez ApplogiQ sur SaaS, immobilier et e-commerce."
+    },
+    "education": {
+      "title": "Formation",
+      "text": "Diplôme et certifications qui fondent son parcours d'ingénieur."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Ouvert aux postes frontend seniors en Allemagne — écrivez pour échanger."
+    },
+    "footer": {
+      "title": "Visite terminée",
+      "text": "Merci d'avoir parcouru le portfolio. Contactez-moi quand vous voulez."
+    }
+  },
+  "portfolio": {
+    "personalInfo": {
+      "roleTitle": "Ingénieur Frontend — React · Next.js · TypeScript",
+      "location": "Tiruppur, Inde · Ouvert à une relocalisation en Allemagne",
+      "visaStatus": "Citoyen indien · Éligible à la Carte Bleue UE · Parrainage de visa requis",
+      "workMode": "Sur site, hybride ou à distance — totalement flexible"
+    },
+    "projects": {
+      "crayoon": {
+        "type": "Plateforme d'entreprise de gestion d'uniformes & e-commerce",
+        "client": "ApplogiQ (Client en production)",
+        "problem": "Les écoles et les clients entreprises n'avaient aucun système unifié pour gérer les catalogues d'uniformes, les allocations de tailles et le traitement des commandes — ce qui entraînait des erreurs manuelles et des cycles de livraison lents.",
+        "approach": [
+          "Conception d'un système complet de gestion d'uniformes et de e-commerce.",
+          "Création de plus de 20 composants React réutilisables partagés entre le web et le mobile.",
+          "Intégration d'un backend FastAPI pour le traitement des commandes en temps réel et les mises à jour d'inventaire.",
+          "Co-auteur d'une stratégie Jest + React Testing Library pour une couverture de 100 % des formulaires critiques."
+        ],
+        "impact": [
+          { "label": "Temps de dev UI", "value": "↓ 30 %" },
+          { "label": "Confiance anti-régression", "value": "↑ 60 %" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "J'ai choisi Next.js pour son routage intégré et ses capacités SEO pour le catalogue public, tout en conservant le tableau de bord de gestion interne strictement côté client afin d'optimiser les personnalisateurs d'uniformes très riches en état.",
+          "tradeoffs": [
+            {
+              "considered": "Redux pour l'état",
+              "whyRejected": "Surcharge de boilerplate pour un cycle de développement rapide",
+              "whyChosen": "React Query + Context API"
+            }
+          ],
+          "wouldDoDifferently": "J'aurais introduit plus tôt une structure monorepo pour partager les types plus fluidement entre le backend FastAPI et le frontend React."
+        }
+      },
+      "vigilance": {
+        "type": "Système d'évaluation de sécurité & de reporting",
+        "client": "ApplogiQ (Client en production)",
+        "problem": "Les responsables terrain utilisaient des outils papier pour les évaluations de sécurité des biens, ce qui entraînait une génération de rapports lente et sujette aux erreurs sur mobile.",
+        "approach": [
+          "Conception d'une application web orientée données pour réaliser des évaluations de risques.",
+          "Mise en œuvre de la virtualisation du DOM et du lazy loading pour de grands jeux de données (1000+ enregistrements).",
+          "Conception de tableaux de bord interactifs et de workflows de formulaires multi-étapes."
+        ],
+        "impact": [
+          { "label": "Chargement rapport mobile", "value": "↓ 40 %" },
+          { "label": "Précision de saisie", "value": "↑ 95 %" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "J'ai choisi la virtualisation du DOM plutôt que le scroll infini car les tableaux d'évaluation exigeaient un tri cohérent sur des milliers de lignes sans déclencher de multiples requêtes réseau sur des réseaux mobiles de terrain.",
+          "tradeoffs": [
+            {
+              "considered": "Tableau standard",
+              "whyRejected": "Performances mobiles dégradées au-delà de 500 enregistrements",
+              "whyChosen": "Liste virtualisée"
+            }
+          ],
+          "wouldDoDifferently": "Mettre en place une approche offline-first via les capacités PWA pour gérer les évaluations terrain dans des zones sans connectivité."
+        }
+      },
+      "shopq": {
+        "type": "Interface SaaS e-commerce de landing & conversion",
+        "client": "ApplogiQ (Client en production)",
+        "problem": "Le client avait besoin d'une plateforme de landing à fort taux de conversion pour soutenir le lancement go-to-market de son système de gestion de catalogues.",
+        "approach": [
+          "Livraison d'une UI responsive et component-driven avec React.js et Bootstrap.",
+          "Mise en œuvre de formulaires de capture de leads validés et de démos produit interactives.",
+          "Optimisation des parcours utilisateur pour les conversions de réservation de démo."
+        ],
+        "impact": [
+          { "label": "Taux de conversion", "value": "↑ 25 %" },
+          { "label": "Compatibilité multi-appareils", "value": "100 %" }
+        ],
+        "deepDive": {
+          "architectureReasoning": "J'ai choisi Bootstrap pour cette landing page spécifique en raison du besoin de prototypage rapide et de l'accès à une large bibliothèque de composants de conversion préconstruits pour respecter un délai go-to-market strict de 2 semaines.",
+          "tradeoffs": [
+            {
+              "considered": "CSS personnalisé",
+              "whyRejected": "Contraintes de time-to-market",
+              "whyChosen": "Couche utilitaire Bootstrap"
+            }
+          ],
+          "wouldDoDifferently": "J'utiliserais Tailwind CSS plutôt que Bootstrap pour un meilleur contrôle des design tokens et un bundle CSS final plus léger."
+        }
+      }
+    },
+    "skillGroups": {
+      "frontend": "Frontend",
+      "styling": "Styles",
+      "stateData": "État & Données",
+      "testing": "Tests",
+      "backendApis": "Backend / APIs",
+      "infrastructure": "Infrastructure",
+      "tooling": "Outils",
+      "performance": "Performance"
+    },
+    "experience": [
+      {
+        "title": "Ingénieur logiciel — Frontend",
+        "company": "ApplogiQ",
+        "location": "Tiruppur, Inde",
+        "period": "Juil. 2024 – Présent",
+        "responsibilities": [
+          "Développement de solutions frontend prêtes pour la production dans les secteurs immobilier, SaaS, santé et e-commerce.",
+          "Intégration d'APIs REST basées sur FastAPI dans 3 applications en production, avec livraison des fonctionnalités prioritaires dans les délais.",
+          "Maintien de la compatibilité cross-navigateur et d'une architecture UI component-based.",
+          "Configuration de pipelines CI/CD avec GitHub Actions pour automatiser les workflows de build et de tests."
+        ]
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Business Administration with Computer Applications",
+        "institution": "RVS College of Arts and Science",
+        "location": "Coimbatore, Inde",
+        "period": "Sep. 2021 – Avr. 2024",
+        "notes": "Cours couvrant les concepts de programmation, les technologies web, la gestion de bases de données et les systèmes informatiques."
+      }
+    ],
+    "certifications": [
+      {
+        "title": "Certification Full-Stack Web Developer",
+        "issuer": "SkillVertex",
+        "period": "Mar. 2023 – Juin 2023",
+        "topics": ["React.js", "Responsive UI Design", "REST API Integration"]
+      }
+    ],
+    "languages": {
+      "tamil": { "name": "Tamoul", "level": "Langue maternelle" },
+      "english": { "name": "Anglais", "level": "Professionnel (B2+)" },
+      "french": { "name": "Français", "level": "Débutant (A1)" }
+    }
+  }
+}

@@ -85,6 +85,44 @@
     "rights": "All rights reserved.",
     "stack": "Built with React · TypeScript · Tailwind CSS"
   },
+  "guide": {
+    "hero": {
+      "title": "Start here",
+      "text": "Meet Hari — a frontend engineer focused on precision, performance, and product."
+    },
+    "about": {
+      "title": "About",
+      "text": "Background, ownership mindset, and why he's aiming for German tech roles."
+    },
+    "skills": {
+      "title": "Skills",
+      "text": "The production stack — React, Next.js, TypeScript, testing, and delivery tooling."
+    },
+    "projects": {
+      "title": "Projects",
+      "text": "Live client work with measurable outcomes — Crayoon, Vigilance, and ShopQ."
+    },
+    "deep_dives": {
+      "title": "Deep dives",
+      "text": "Architecture decisions, trade-offs, and what he'd do differently next time."
+    },
+    "experience": {
+      "title": "Experience",
+      "text": "Professional frontend work at ApplogiQ across SaaS, real estate, and e-commerce."
+    },
+    "education": {
+      "title": "Education",
+      "text": "Degree and certifications that built the engineering foundation."
+    },
+    "contact": {
+      "title": "Contact",
+      "text": "Open to senior frontend roles in Germany — say hello and start a conversation."
+    },
+    "footer": {
+      "title": "Tour complete",
+      "text": "Thanks for walking through the portfolio. Reach out anytime."
+    }
+  },
   "portfolio": {
     "personalInfo": {
       "roleTitle": "Frontend Engineer — React · Next.js · TypeScript",
@@ -214,8 +252,7 @@
     "languages": {
       "tamil": { "name": "Tamil", "level": "Native" },
       "english": { "name": "English", "level": "Professional (B2+)" },
-      "german": { "name": "German", "level": "Beginner (A1)" },
-      "hindi": { "name": "Hindi", "level": "Conversational" }
+      "french": { "name": "French", "level": "Beginner (A1)" }
     }
   }
 }

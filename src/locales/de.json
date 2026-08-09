@@ -85,6 +85,44 @@
     "rights": "Alle Rechte vorbehalten.",
     "stack": "Erstellt mit React · TypeScript · Tailwind CSS"
   },
+  "guide": {
+    "hero": {
+      "title": "Hier starten",
+      "text": "Das ist Hari — Frontend-Entwickler mit Fokus auf Präzision, Performance und Produkt."
+    },
+    "about": {
+      "title": "Über mich",
+      "text": "Hintergrund, Ownership-Mindset und warum er deutsche Tech-Rollen anstrebt."
+    },
+    "skills": {
+      "title": "Skills",
+      "text": "Der Produktions-Stack — React, Next.js, TypeScript, Testing und Delivery."
+    },
+    "projects": {
+      "title": "Projekte",
+      "text": "Live-Kundenprojekte mit messbaren Ergebnissen — Crayoon, Vigilance und ShopQ."
+    },
+    "deep_dives": {
+      "title": "Deep Dives",
+      "text": "Architekturentscheidungen, Trade-offs und was er beim nächsten Mal anders machen würde."
+    },
+    "experience": {
+      "title": "Erfahrung",
+      "text": "Professionelle Frontend-Arbeit bei ApplogiQ in SaaS, Real Estate und E-Commerce."
+    },
+    "education": {
+      "title": "Bildung",
+      "text": "Studium und Zertifikate als Fundament der Engineering-Karriere."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "text": "Offen für Senior-Frontend-Rollen in Deutschland — melde dich gerne."
+    },
+    "footer": {
+      "title": "Tour beendet",
+      "text": "Danke für den Rundgang durchs Portfolio. Schreib jederzeit."
+    }
+  },
   "portfolio": {
     "personalInfo": {
       "roleTitle": "Frontend-Entwickler — React · Next.js · TypeScript",
@@ -214,8 +252,7 @@
     "languages": {
       "tamil": { "name": "Tamilisch", "level": "Muttersprache" },
       "english": { "name": "Englisch", "level": "Fließend (B2+)" },
-      "german": { "name": "Deutsch", "level": "Anfänger (A1)" },
-      "hindi": { "name": "Hindi", "level": "Konversationsniveau" }
+      "french": { "name": "Französisch", "level": "Anfänger (A1)" }
     }
   }
 }

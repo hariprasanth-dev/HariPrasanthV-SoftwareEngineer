@@ -21,12 +21,12 @@ export const ProjectCard = ({ project, reverse = false }: Props) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
-      className={`flex flex-col lg:flex-row gap-12 mb-32 ${reverse && showImage ? 'lg:flex-row-reverse' : ''}`}
+      className={`flex flex-col lg:flex-row gap-8 lg:gap-12 mb-16 sm:mb-24 lg:mb-32 ${reverse && showImage ? 'lg:flex-row-reverse' : ''}`}
     >
       {/* Content Area (60% when image is shown, 100% otherwise) */}
-      <div className={`space-y-6 ${showImage ? 'lg:w-[60%]' : 'w-full'}`}>
+      <div className={`space-y-5 sm:space-y-6 min-w-0 ${showImage ? 'lg:w-[60%]' : 'w-full'}`}>
         <div>
-          <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 sm:gap-4 mb-4">
             <div className="flex flex-wrap gap-2">
               <span className="px-2 py-0.5 bg-accent-dim text-accent-primary text-[10px] font-mono border border-accent-primary/20 uppercase tracking-widest">
                 {project.timeline}
@@ -47,7 +47,7 @@ export const ProjectCard = ({ project, reverse = false }: Props) => {
               </a>
             )}
           </div>
-          <h3 className="text-3xl md:text-4xl font-mono text-text-primary mb-2">
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-mono text-text-primary mb-2 break-words">
             {project.name}
           </h3>
           <p className="text-text-muted font-mono text-xs uppercase tracking-wider italic">
@@ -79,17 +79,17 @@ export const ProjectCard = ({ project, reverse = false }: Props) => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 gap-4 py-6 border-y border-border-subtle">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-5 sm:py-6 border-y border-border-subtle">
           {project?.impact?.map((metric, i) => (
-            <div key={i}>
-              <p className="text-accent-primary text-2xl md:text-3xl font-mono font-bold">{metric.value}</p>
-              <p className="text-text-muted text-xs uppercase tracking-widest font-mono">{metric.label}</p>
+            <div key={i} className="min-w-0">
+              <p className="text-accent-primary text-xl sm:text-2xl md:text-3xl font-mono font-bold break-words">{metric.value}</p>
+              <p className="text-text-muted text-[10px] sm:text-xs uppercase tracking-widest font-mono">{metric.label}</p>
             </div>
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4 pt-4">
-          <a href={`#deep-dive-${project.id}`} className="btn-primary flex items-center gap-2">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4">
+          <a href={`#deep-dive-${project.id}`} className="btn-primary flex items-center justify-center gap-2">
             {t('projects.btn_deep_dive')}
           </a>
           {project.projectUrl && (
@@ -97,13 +97,13 @@ export const ProjectCard = ({ project, reverse = false }: Props) => {
               href={project.projectUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline flex items-center gap-2"
+              className="btn-outline flex items-center justify-center gap-2"
             >
               <ExternalLink size={14} className="text-accent-primary" />
               {t('projects.btn_visit')}
             </a>
           )}
-          <button className="btn-outline flex items-center gap-2">
+          <button className="btn-outline flex items-center justify-center gap-2">
             <Terminal size={14} className="text-accent-primary" />
             {t('projects.btn_arch')}
           </button>
@@ -112,7 +112,7 @@ export const ProjectCard = ({ project, reverse = false }: Props) => {
 
       {/* Image Area (40%) - Only visible for ShopQ for now */}
       {showImage ? (
-        <div className="lg:w-[40%]">
+        <div className="lg:w-[40%] min-w-0">
           <a 
             href={project.projectUrl}
             target="_blank"

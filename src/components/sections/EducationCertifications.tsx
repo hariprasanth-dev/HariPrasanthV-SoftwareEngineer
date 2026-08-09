@@ -14,11 +14,11 @@ const EducationCertifications = () => {
     <section id="education" className="section-container">
       <SectionHeading>{t("education.title")}</SectionHeading>
 
-      <div className="grid lg:grid-cols-2 gap-12">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-12">
         {/* Education Section */}
-        <div className="space-y-8">
-          <h4 className="font-mono text-sm uppercase tracking-[0.3em] text-text-muted flex items-center gap-3">
-            <GraduationCap size={18} className="text-accent-primary" />
+        <div className="space-y-6 sm:space-y-8 min-w-0">
+          <h4 className="font-mono text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-text-muted flex items-center gap-3">
+            <GraduationCap size={18} className="text-accent-primary shrink-0" />
             {t("education.edu_heading")}
           </h4>
 
@@ -26,13 +26,13 @@ const EducationCertifications = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="p-8 border-l-2 border-accent-primary bg-bg-surface space-y-4 hover:bg-bg-elevated transition-colors"
+            className="p-5 sm:p-8 border-l-2 border-accent-primary bg-bg-surface space-y-4 hover:bg-bg-elevated transition-colors"
           >
-            <div className="flex justify-between items-start gap-4">
-              <h5 className="text-xl font-mono text-text-primary uppercase tracking-tight">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-4">
+              <h5 className="text-lg sm:text-xl font-mono text-text-primary uppercase tracking-tight break-words min-w-0">
                 {Education_data?.degree}
               </h5>
-              <span className="text-[10px] font-mono text-text-muted border border-border-subtle px-2 py-1 uppercase whitespace-nowrap">
+              <span className="text-[10px] font-mono text-text-muted border border-border-subtle px-2 py-1 uppercase whitespace-nowrap self-start shrink-0">
                 {Education_data?.period}
               </span>
             </div>
@@ -46,9 +46,9 @@ const EducationCertifications = () => {
         </div>
 
         {/* Certifications Section */}
-        <div className="space-y-8">
-          <h4 className="font-mono text-sm uppercase tracking-[0.3em] text-text-muted flex items-center gap-3">
-            <Award size={18} className="text-accent-primary" />
+        <div className="space-y-6 sm:space-y-8 min-w-0">
+          <h4 className="font-mono text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] text-text-muted flex items-center gap-3">
+            <Award size={18} className="text-accent-primary shrink-0" />
             {t("education.cert_heading")}
           </h4>
 
@@ -60,18 +60,18 @@ const EducationCertifications = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="p-8 border border-border-subtle bg-bg-surface hover:border-accent-primary/50 transition-all group"
+                className="p-5 sm:p-8 border border-border-subtle bg-bg-surface hover:border-accent-primary/50 transition-all group"
               >
-                <div className="flex justify-between items-start gap-4 mb-4">
-                  <div>
-                    <h5 className="text-lg font-mono text-text-primary uppercase tracking-tight group-hover:text-accent-primary transition-colors">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 sm:gap-4 mb-4">
+                  <div className="min-w-0">
+                    <h5 className="text-base sm:text-lg font-mono text-text-primary uppercase tracking-tight group-hover:text-accent-primary transition-colors break-words">
                       {cert.title}
                     </h5>
                     <p className="text-text-muted text-xs font-mono mt-1">
                       {cert.issuer}
                     </p>
                   </div>
-                  <span className="text-[10px] font-mono text-text-muted border border-border-subtle px-2 py-1 uppercase whitespace-nowrap">
+                  <span className="text-[10px] font-mono text-text-muted border border-border-subtle px-2 py-1 uppercase whitespace-nowrap self-start shrink-0">
                     {cert.period}
                   </span>
                 </div>
