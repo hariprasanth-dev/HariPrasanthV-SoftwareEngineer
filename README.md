@@ -112,7 +112,7 @@ This repository houses the entire frontend and backend server logic, leveraging 
    This runs `server.ts` via `tsx` compiler. The application launches a custom Express server that integrates Vite middleware.
    
 5. Open your browser and navigate to:
-   * **URL:** [http://localhost:3006](http://localhost:3006)
+   * **URL:** [http://localhost:3001](http://localhost:3001)
 
 ---
 
