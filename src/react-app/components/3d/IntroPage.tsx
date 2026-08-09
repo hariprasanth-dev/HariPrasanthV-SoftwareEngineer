@@ -1,8 +1,12 @@
-import { useEffect, useState, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useEffect, useState, useRef, useMemo } from "react";
 import * as THREE from "three";
 import gsap from "gsap";
 import { motion } from "framer-motion";
+import { Canvas, useFrame, extend } from "@react-three/fiber";
+
+// FIX 1: Explicitly register THREE elements so R3F knows about them.
+// This fixes the "Property does not exist on type JSX.IntrinsicElements" errors.
+extend(THREE);
 
 // ---------------- STAR FIELD ----------------
 function StarsField({ fly }: { fly: boolean }) {
@@ -20,7 +24,7 @@ function StarsField({ fly }: { fly: boolean }) {
     if (pointsRef.current) {
       pointsRef.current.geometry.setAttribute(
         "position",
-        new THREE.BufferAttribute(positions, 3)
+        new THREE.BufferAttribute(positions, 3),
       );
     }
   }, []);
@@ -53,18 +57,18 @@ function StarsField({ fly }: { fly: boolean }) {
     }
   });
 
-  return (
-    <points ref={pointsRef}>
-      <bufferGeometry />
-      <pointsMaterial
-        size={0.2}
-        color="#ffffff"
-        transparent
-        opacity={0.9}
-        sizeAttenuation
-      />
-    </points>
-  );
+  // return (
+  //   <points ref={pointsRef}>
+  //     <bufferGeometry />
+  //     <pointsMaterial
+  //       size={0.2}
+  //       color="#ffffff"
+  //       transparent
+  //       opacity={0.9}
+  //       sizeAttenuation
+  //     />
+  //   </points>
+  // );
 }
 
 interface HeaderProps {
@@ -96,11 +100,11 @@ const IntroPage = ({ onFinish, data }: HeaderProps) => {
 
   return (
     <div className="relative w-full h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black overflow-hidden">
-      <Canvas camera={{ position: [0, 0, 5] }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[3, 5, 2]} intensity={0.8} />
+      {/* <Canvas camera={{ position: [0, 0, 5] }}>
+        <THREE.AmbientLight intensity={0.5} />
+        <THREE.DirectionalLight position={[3, 5, 2]} intensity={0.8} />
         <StarsField fly={fly} />
-      </Canvas>
+      </Canvas> */}
 
       {/* Background glowing blobs */}
       <div className="absolute inset-0">

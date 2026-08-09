@@ -12,33 +12,40 @@ import GeometricBackground from "@/react-app/components/3d/GeometricBackground";
 import { resumeData } from "@/shared/data";
 import IntroPage from "@/react-app/components/3d/IntroPage";
 
-export default function Home() {
+const Home = () => {
   const [showIntro, setShowIntro] = useState(true);
 
   return (
     <div className="font-sans relative overflow-hidden min-h-screen">
       {showIntro ? (
-        <IntroPage onFinish={() => setShowIntro(false)} data={resumeData.personal} />
+        <IntroPage
+          onFinish={() => setShowIntro(false)}
+          data={resumeData?.personal}
+        />
       ) : (
         <div>
-          <GeometricBackground />
-          <Header data={resumeData.personal} />
-          <About
-            summary={resumeData.summary}
-            summary2={resumeData.summary2}
-            summary3={resumeData.summary3}
-          />
-          <Skills skills={resumeData.technicalSkills} />
-          <Experience experiences={resumeData.workExperience} />
-          <Projects projects={resumeData.projects} />
-          <Education
+          {/* <GeometricBackground /> */}
+          <Header data={resumeData?.personal} />
+          {/* {resumeData && (
+            <About
+              summary={resumeData.summary}
+              summary2={resumeData.summary2}
+              summary3={resumeData.summary3}
+            />
+          )} */}
+          {/* <Skills skills={resumeData.technicalSkills} /> */}
+          {/* <Experience experiences={resumeData.workExperience} /> */}
+          {/* <Projects projects={resumeData.projects} /> */}
+          {/* <Education
             education={resumeData.education}
             languages={resumeData.languages}
             visa={resumeData.visa}
-          />
+          /> */}
           <Contact data={resumeData.personal} />
         </div>
       )}
     </div>
   );
-}
+};
+
+export default Home;

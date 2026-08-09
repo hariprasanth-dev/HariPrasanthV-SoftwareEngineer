@@ -76,7 +76,7 @@ export default function Header({ data }: HeaderProps) {
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-slate-900 to-black overflow-hidden"
     >
       {/* 3D Floating Particles */}
-      <FloatingParticles />
+      {/* <FloatingParticles /> */}
 
       {/* 3D Animated Spheres */}
       {/* <div className="absolute top-20 right-20 w-64 h-64 opacity-60">
@@ -84,7 +84,7 @@ export default function Header({ data }: HeaderProps) {
           </div> */}
 
       <div className="absolute bottom-20 left-20 w-48 h-48 opacity-50">
-        <AnimatedSphere color="#334155" />
+        {/* <AnimatedSphere color="#334155" /> */}
       </div>
 
       {/* Enhanced gradient orbs */}
