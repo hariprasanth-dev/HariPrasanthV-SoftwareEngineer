@@ -9,22 +9,22 @@
     "available": "Available for work"
   },
   "hero": {
-    "title1": "Frontend Engineer.",
+    "title1": "Software Engineer.",
     "title2": "Precision. Performance. Product.",
     "cta_cv": "Download CV",
     "cta_projects": "View Projects",
     "badge_blue_card": "EU Blue Card Eligible · Open to Relocation",
-    "description": "Frontend Engineer — React · Next.js · TypeScript. Delivering high-performance interfaces with engineering rigour.",
+    "description": "Software Engineer — React · Next.js · FastAPI · Contao CMS. Shipping production platforms across real estate, healthcare, ERP/CRM, e-commerce, and European client work.",
     "stats": {
       "exp": "2+ Years Production Experience",
-      "apps": "3 Live Applications",
+      "apps": "10+ Shipped Platforms",
       "perf": "~40% Performance Gains Delivered"
     }
   },
   "about": {
     "title": "About Me",
-    "description_p1": "I am a Frontend Engineer dedicated to building high-performance, accessible, and inclusive digital products. My expertise lies in architecting production-grade React and Next.js applications that bridge the gap between engineering rigour and intuitive user experiences.",
-    "description_p2": "With a background in delivering production systems for real estate and e-commerce, I specialize in DOM virtualization, performance auditing, and ensuring sub-second response times even with massive datasets.",
+    "description_p1": "I am a Software Engineer dedicated to building high-performance, accessible digital products across the full lifecycle. My expertise lies in React.js, Next.js, TypeScript, and Tailwind CSS, paired with Python FastAPI backends and Contao CMS platforms for European clients.",
+    "description_p2": "At ApplogiQ I ship internal enterprise apps (admin panel, Planora) while concurrently delivering 6+ Contao-based platforms for Time4Digital in Luxembourg. Across real estate, healthcare, ERP/CRM, and e-commerce I focus on modular frontends, measurable performance, and rapid parallel delivery.",
     "ownership": "Every line of code, every UI decision, every CI/CD pipeline configuration, and every deployment in my portfolio was designed, written, and shipped by me — independently.",
     "german_market": "I am seeking a senior frontend engineering role at a German technology company where engineering rigour, clean architecture, and measurable outcomes are the standard.",
     "languages": "Languages"
@@ -34,13 +34,16 @@
   },
   "projects": {
     "title": "Project Showroom",
-    "subtitle": "Production work. Real clients. Measurable outcomes.",
+    "subtitle": "Production systems across European CMS, internal ERP, real estate, healthcare, and commerce — owned end to end, live URLs, outcomes you can defend in an interview.",
     "challenge": "The Challenge:",
     "approach": "The Approach:",
     "impact": "Impact",
     "btn_deep_dive": "Technical Deep Dive ↓",
     "btn_visit": "Visit Website",
-    "btn_arch": "View Architecture"
+    "btn_arch": "View Architecture",
+    "related_sites": "Related live sites",
+    "additional_title": "Additional Shipped Work",
+    "additional_subtitle": "CRM, IIoT, and healthcare interfaces shipped in parallel with the core product stream — same production bar."
   },
   "deep_dives": {
     "title": "Technical Deep Dives",
@@ -88,7 +91,7 @@
   "guide": {
     "hero": {
       "title": "Start here",
-      "text": "Meet Hari — a frontend engineer focused on precision, performance, and product."
+      "text": "Meet Hari — a software engineer focused on React, Next.js, FastAPI, and production CMS work."
     },
     "about": {
       "title": "About",
@@ -100,7 +103,7 @@
     },
     "projects": {
       "title": "Projects",
-      "text": "Live client work with measurable outcomes — Crayoon, Vigilance, and ShopQ."
+      "text": "Live client and enterprise work — Time4Digital, Planora, TerraVista, Crayoon, and more."
     },
     "deep_dives": {
       "title": "Deep dives",
@@ -108,7 +111,7 @@
     },
     "experience": {
       "title": "Experience",
-      "text": "Professional frontend work at ApplogiQ across SaaS, real estate, and e-commerce."
+      "text": "Software engineering at ApplogiQ — European CMS clients plus internal ERP, CRM, and commerce platforms."
     },
     "education": {
       "title": "Education",
@@ -125,110 +128,271 @@
   },
   "portfolio": {
     "personalInfo": {
-      "roleTitle": "Frontend Engineer — React · Next.js · TypeScript",
+      "roleTitle": "Software Engineer — React · Next.js · FastAPI · Contao CMS",
       "location": "Tiruppur, India · Open to relocation to Germany",
       "visaStatus": "Indian citizen · EU Blue Card eligible · Visa sponsorship required",
       "workMode": "On-site, Hybrid, or Remote — fully flexible"
     },
     "projects": {
-      "crayoon": {
-        "type": "Enterprise Uniform Management & E-Commerce Platform",
-        "client": "ApplogiQ (Production Client)",
-        "problem": "Schools and corporate clients had no unified system to manage uniform catalogues, size allocations, and order fulfilment — leading to manual errors and slow delivery cycles.",
+      "applogiq": {
+        "type": "Corporate Website & Internal Admin Platform",
+        "client": "ApplogiQ (Internal Enterprise)",
+        "problem": "The public site and admin ran as two disconnected products. Marketing content, inbound leads, and internal data lived in different models — so applogiq.org could not operate as a real acquisition engine, and operators could not act on demand from one console.",
         "approach": [
-          "Architected a full-scale uniform management and e-commerce system.",
-          "Built 20+ reusable React components shared across web and mobile platforms.",
-          "Integrated FastAPI backend for real-time order handling and inventory updates.",
-          "Co-authored a Jest + React Testing Library strategy for 100% core form coverage."
+          "Rebuilt applogiq.org and the internal admin as two frontends on one shared data contract: Next.js for SEO and routing on the marketing site, a client-driven admin for operators.",
+          "Designed modular React + TypeScript + Tailwind UI so marketing pages, lead capture, and admin tables share one interaction language instead of two design systems.",
+          "Wired public-site lead payloads into admin workflows so inbound demand is captured, reviewed, and actioned in a single loop."
         ],
         "impact": [
-          { "label": "UI Dev Time", "value": "↓ 30%" },
-          { "label": "Regression Confidence", "value": "↑ 60%" }
+          {
+            "label": "Surfaces Unified",
+            "value": "Website + Admin"
+          },
+          {
+            "label": "Status",
+            "value": "Live in production"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "I chose Next.js for its built-in routing and SEO capabilities for the public-facing catalogue, while keeping the internal management dashboard strictly as a client-side layout to optimize for state-heavy uniform customizers.",
+          "architectureReasoning": "I treated the public site and admin as two consumers of one contract, not two products. Next.js owns marketing routing and SEO; the admin stays interaction-heavy and client-driven so operators can manage content, leads, and operations without full-page reloads. That split is what hiring teams look for: the right rendering model per surface, not one SPA for everything.",
           "tradeoffs": [
             {
-              "considered": "Redux for state",
-              "whyRejected": "Overhead of boilerplate for rapid development cycle",
-              "whyChosen": "React Query + Context API"
+              "considered": "Separate CMS for the marketing site",
+              "whyRejected": "Would freeze website and admin on different content models and recreate the original disconnect",
+              "whyChosen": "Shared API contract and UI patterns across both surfaces"
             }
           ],
-          "wouldDoDifferently": "I would have introduced a monorepo structure earlier to share types more seamlessly between the FastAPI backend and the React frontend."
+          "wouldDoDifferently": "I would extract a shared design-system package on day one so tokens, forms, and table patterns never diverge between the public site and the admin."
+        }
+      },
+      "planora": {
+        "type": "Internal Workflow ERP · RBAC & Real-Time Ops",
+        "client": "ApplogiQ (Internal Enterprise)",
+        "problem": "Internal operations had no system of record for roles, automated modules, and live work state. Handoffs lived in chat and spreadsheets, so permissions were tribal knowledge and no one could see the same operational truth at the same time.",
+        "approach": [
+          "Architected Planora as a full-stack workflow platform: React/Next.js views, FastAPI services, and a permission model that new modules inherit instead of reinventing.",
+          "Implemented role-based access control at the module boundary so admins, operators, and viewers only see the workflows they are allowed to run.",
+          "Used Cursor AI to scaffold consistent full-stack slices in parallel, then hardened auth, real-time state sync, and shared contracts by hand."
+        ],
+        "impact": [
+          {
+            "label": "Access Control",
+            "value": "Role-based (RBAC)"
+          },
+          {
+            "label": "Operational State",
+            "value": "Real-time sync"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Planora had to ship many operational modules in parallel without turning into a permission snowflake per screen. I used Cursor AI to scaffold consistent slices — React views, FastAPI endpoints, permission checks — then locked a shared auth and state layer by hand. Guards live at the module boundary so a new workflow inherits access rules. That is the difference between a dashboard and an internal product.",
+          "tradeoffs": [
+            {
+              "considered": "Off-the-shelf workflow SaaS",
+              "whyRejected": "Could not match internal role models or real-time operational state without heavy customization cost",
+              "whyChosen": "Custom React + FastAPI platform with prompt-driven module scaffolding and a shared RBAC contract"
+            }
+          ],
+          "wouldDoDifferently": "I would introduce a typed event bus earlier so real-time updates and audit history share one contract instead of per-module sockets."
+        }
+      },
+      "time4digital": {
+        "type": "European Multi-Brand Contao CMS Portfolio",
+        "client": "Time4Digital (Luxembourg)",
+        "problem": "A Luxembourg agency needed six-plus client sites shipped in parallel — architecture, medical transport, retail, and the agency itself. Each brand had to look distinct, stay multilingual (DE/FR/EN), and remain editable by teams who already work in Contao — not wait on a headless rebuild.",
+        "approach": [
+          "Owned build, customization, and deployment of 6+ Contao CMS platforms with reusable layouts, forms, and service catalogs for Luxembourg and German clients.",
+          "Shipped TS-Concept (architecture), Luxambulance (emergency medical transport), Modetreff (retail), and Time4Digital’s own presence on one maintainable module kit.",
+          "Kept brand-specific CSS and JS on a shared CMS foundation so editors can publish without a new stack per client — the delivery model European agencies actually run."
+        ],
+        "impact": [
+          {
+            "label": "Platforms Shipped",
+            "value": "6+"
+          },
+          {
+            "label": "Markets",
+            "value": "Luxembourg / Germany"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Contao was the right CMS because Time4Digital’s editors and LU/DE clients already operate in that stack. Modular layouts, multilingual DE/FR/EN content, and form-heavy service catalogs map to Contao content types, so each brand ships with custom CSS/JS without a headless rebuild. For European hiring managers this is the signal: I can deliver in the CMS the market already uses, not only in a greenfield React app.",
+          "tradeoffs": [
+            {
+              "considered": "WordPress or a Next.js rebuild per client",
+              "whyRejected": "WordPress plugin bloat and weaker editorial structure; a headless rebuild would slow content teams who already know Contao",
+              "whyChosen": "Contao CMS with reusable modules and brand-specific styling"
+            }
+          ],
+          "wouldDoDifferently": "I would extract a shared Contao module kit and design tokens earlier so spacing, forms, and service grids stay consistent across all six client sites."
+        }
+      },
+      "terravista": {
+        "type": "Luxury Real Estate Design-Build Platform",
+        "client": "ApplogiQ (Production Client)",
+        "problem": "Terra Vista Construction needed a conversion-grade public platform for Arizona luxury homes — services, architectural proof, and consultation booking. A static brochure would leak high-intent visitors before anyone could book a Let’s Talk session.",
+        "approach": [
+          "Built React service modules for custom luxury homes, vacation rentals, tear-down/rebuild, and remodeling, composed so each vertical can iterate without a full-page rewrite.",
+          "Shipped architectural portfolio galleries and a Let’s Talk consultation flow at terravistahome.com, designed mobile-first for high-ticket browsing.",
+          "Delivered a fully responsive Bootstrap UI across desert, mountain, and woods markets without blocking launch on a listing-index rewrite."
+        ],
+        "impact": [
+          {
+            "label": "Primary Conversion",
+            "value": "Let’s Talk booking"
+          },
+          {
+            "label": "Live Market",
+            "value": "Arizona · terravistahome.com"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "TerraVista is a marketing-led real estate experience: brand, proof, then booking. React with Bootstrap shipped service modules, galleries, and forms quickly while keeping the visual language stable on mobile. Portfolios and booking stay independent components so either can iterate without a rewrite — velocity with a clean composition boundary, not a monolith page.",
+          "tradeoffs": [
+            {
+              "considered": "Next.js SSR for listing SEO",
+              "whyRejected": "Launch scope was brand, services, and booking — not a large crawlable listing index",
+              "whyChosen": "React SPA with Bootstrap for velocity and responsive layout"
+            }
+          ],
+          "wouldDoDifferently": "If listing pages grow, I would move the public catalogue to Next.js App Router for SSR and metadata while keeping the booking wizard as a client island."
+        }
+      },
+      "crayoon": {
+        "type": "Multi-Client Uniform ERP & Commerce Platform",
+        "client": "ApplogiQ (Production Client)",
+        "problem": "Schools and corporates had no single system for catalogues, size allocation, inventory, and fulfilment. Orders were manual, errors compounded across clients, and stock truth always lagged one spreadsheet behind the warehouse.",
+        "approach": [
+          "Built the operations platform on Next.js, React, TypeScript, and Tailwind: catalogues, order flows, and size customizers as reusable modules instead of one-off screens.",
+          "Integrated Python FastAPI + PostgreSQL as the source of truth for orders and inventory so the UI never duplicates business rules.",
+          "Split the public catalogue (routing and SEO) from a client-side dashboard so state-heavy uniform customizers stay responsive under real operator load."
+        ],
+        "impact": [
+          {
+            "label": "UI Delivery Speed",
+            "value": "↓ 30%"
+          },
+          {
+            "label": "Inventory Truth",
+            "value": "Real-time"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Next.js owns routing and SEO on the public catalogue; the internal dashboard stays client-side so state-heavy customizers remain responsive. FastAPI plus PostgreSQL own order and inventory writes so the UI can refetch without duplicating business rules. Server state via React Query plus Context for UI state beat a Redux layer that would have slowed a multi-client ERP cycle.",
+          "tradeoffs": [
+            {
+              "considered": "Redux for all application state",
+              "whyRejected": "Boilerplate overhead for a rapid multi-client delivery cycle",
+              "whyChosen": "React Query for server state + Context API for UI state"
+            }
+          ],
+          "wouldDoDifferently": "I would have introduced a monorepo earlier to share types between the FastAPI backend and the React frontend so inventory contracts cannot drift."
         }
       },
       "vigilance": {
-        "type": "Security Assessment & Reporting System",
+        "type": "Field Security Assessment ERP · Mobile Performance",
         "client": "ApplogiQ (Production Client)",
-        "problem": "Field managers were using paper-based tools for property security assessments, resulting in slow, error-prone report generation on mobile devices.",
+        "problem": "Field managers assessed property security and CCTV on paper, then retyped reports on tablets. Once datasets crossed a few hundred rows, the UI stalled on weak mobile networks — inspections finished in the office, not on site.",
         "approach": [
-          "Engineered a data-driven web application for conducting risk assessments.",
-          "Implemented DOM virtualization and lazy loading for large datasets (1000+ records).",
-          "Designed interactive dashboards and multi-step form workflows."
+          "Engineered a tablet- and mobile-first inspection app with multi-step forms and dashboards over FastAPI REST APIs.",
+          "Applied DOM virtualization and lazy loading so 1,000+ assessment rows stay sortable without extra network round-trips in the field.",
+          "Designed dense, touch-first Bootstrap layouts so inspectors complete reports on-site instead of after the visit."
         ],
         "impact": [
-          { "label": "Mobile Report Load", "value": "↓ 40%" },
-          { "label": "Data Entry Accuracy", "value": "↑ 95%" }
+          {
+            "label": "Large Dataset Load",
+            "value": "↓ 40%"
+          },
+          {
+            "label": "Data Entry Accuracy",
+            "value": "↑ 95%"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "I chose DOM virtualization over infinite scroll because the assessment tables required consistent sorting across thousands of rows without triggering multiple network requests on field-strength mobile networks.",
+          "architectureReasoning": "I chose DOM virtualization over infinite scroll because assessment tables needed consistent sorting across thousands of rows without extra requests on field-strength mobile networks. Infinite scroll would have hidden the sort problem behind pagination. Bootstrap kept the tablet layout dense and touch-friendly without a custom grid. This is a performance problem framed as product: reports that load in the field get filled in the field.",
           "tradeoffs": [
             {
-              "considered": "Standard Table",
-              "whyRejected": "Mobile performance degraded with 500+ records",
-              "whyChosen": "Virtualized List"
+              "considered": "Standard HTML table rendering every row",
+              "whyRejected": "Mobile performance degraded past 500 records",
+              "whyChosen": "Virtualized list — only visible rows hit the DOM"
             }
           ],
-          "wouldDoDifferently": "Implement offline-first capability using PWA features to handle field assessments in areas with zero connectivity."
+          "wouldDoDifferently": "I would add offline-first PWA support so field assessments still work in areas with zero connectivity, then sync when the network returns."
         }
       },
       "shopq": {
-        "type": "SaaS E-Commerce Landing & Conversion Interface",
+        "type": "SaaS E-Commerce GTM & Conversion Platform",
         "client": "ApplogiQ (Production Client)",
-        "problem": "The client needed a high-conversion landing platform to support a go-to-market launch for their catalog management system.",
+        "problem": "ShopQ needed a high-conversion public launch surface for a no-code catalog and store platform. Demo booking, pricing, and product proof had to work on every device before the go-to-market window closed — a slow, custom design system would have missed the launch.",
         "approach": [
-          "Delivered a responsive, component-driven UI with React.js and Bootstrap.",
-          "Implemented validated lead-capture forms and interactive product demos.",
-          "Optimized user flows for demo-booking conversions."
+          "Shipped a component-driven React + Bootstrap landing with catalog, pricing, FAQ, and demo-booking flows under a hard GTM deadline.",
+          "Implemented Formik + Yup validated lead capture so every demo request is clean enough for sales to act on immediately.",
+          "Optimized the conversion path (value → proof → plan → contact) for cross-device reliability instead of delaying launch for a custom token system."
         ],
         "impact": [
-          { "label": "Conversion Rate", "value": "↑ 25%" },
-          { "label": "Cross-Device Compatibility", "value": "100%" }
+          {
+            "label": "Demo Conversion",
+            "value": "↑ 25%"
+          },
+          {
+            "label": "Device Coverage",
+            "value": "100%"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "I chose Bootstrap for this specific landing page because of the requirement for rapid prototyping and leveraging a massive library of pre-built conversion components to meet a strict 2-week go-to-market deadline.",
+          "architectureReasoning": "I chose Bootstrap because the job was conversion under a deadline, not a design-system case study. Pre-built layout and form primitives let me spend time on validated lead capture and the demo-booking path. For GTM landings, shipping a working funnel beats a smaller CSS bundle that arrives after the launch window.",
           "tradeoffs": [
             {
-              "considered": "Custom CSS",
-              "whyRejected": "Time-to-market constraints",
-              "whyChosen": "Bootstrap Utility Layer"
+              "considered": "Custom CSS / design tokens from scratch",
+              "whyRejected": "Time-to-market would have slipped the launch window",
+              "whyChosen": "Bootstrap utility layer for velocity and consistent responsive behavior"
             }
           ],
-          "wouldDoDifferently": "I would use Tailwind CSS instead of Bootstrap for better control over the design tokens and a smaller final CSS bundle size."
+          "wouldDoDifferently": "Post-launch I would migrate to Tailwind for tighter design tokens and a smaller CSS bundle, keeping the same conversion architecture."
         }
+      }
+    },
+    "additionalProjects": {
+      "leadsynq": {
+        "type": "Lead Management CRM · Pipeline & Analytics",
+        "client": "ApplogiQ (Production Client)",
+        "summary": "Shipped the production CRM frontend that captures, scores, and routes inbound leads through Contacts → Prospects → Deals → Clients. Role-based dashboards, CSV/XLSX import, task states, and pipeline views so sales teams stop leaking conversions across inboxes."
+      },
+      "tecosoft": {
+        "type": "IIoT / Industry 4.0 Product Landing",
+        "client": "ApplogiQ (Production Client)",
+        "timeline": "Shipped",
+        "summary": "Delivered a conversion-focused React landing for an Industrial IoT / Industry 4.0 product — technical positioning, capability storytelling, and inquiry CTAs for a B2B buyer who needs proof before a sales call."
+      },
+      "ayushyaai": {
+        "type": "AI Healthcare Platform UI · Patient Intake",
+        "client": "ApplogiQ (Production Client)",
+        "timeline": "Shipped",
+        "summary": "Built healthcare-facing React UI for multilingual, voice-first patient intake: structured symptom capture, forms, and clinician-ready summaries so doctors arrive with context instead of a blank chart."
       }
     },
     "skillGroups": {
       "frontend": "Frontend",
-      "styling": "Styling",
+      "styling": "Styling & UI",
       "stateData": "State & Data",
       "testing": "Testing",
-      "backendApis": "Backend / APIs",
+      "backendApis": "Backend & CMS",
       "infrastructure": "Infrastructure",
-      "tooling": "Tooling",
+      "tooling": "AI & Engineering Tools",
       "performance": "Performance"
     },
     "experience": [
       {
-        "title": "Software Engineer — Frontend",
+        "title": "Software Engineer",
         "company": "ApplogiQ",
         "location": "Tiruppur, India",
         "period": "Jul 2024 – Present",
         "responsibilities": [
-          "Developed production-ready frontend solutions across real estate, SaaS, healthcare, and e-commerce verticals.",
-          "Integrated FastAPI-based REST APIs across 3 live production applications, shipping priority features on schedule.",
-          "Maintained cross-browser compatibility and component-based UI architecture.",
-          "Configured CI/CD pipelines using GitHub Actions to automate build and testing workflows."
+          "Concurrently manage multi-stream production workloads — 6+ European client platforms for Time4Digital (Luxembourg) plus internal apps (ApplogiQ Admin Panel, Planora).",
+          "Build, customize, and deploy Contao CMS platforms with modular layouts, forms, and service catalogs for overseas European clients.",
+          "Architect modular frontends with React.js, Next.js, and Tailwind CSS, improving page rendering and UI velocity by ~30%.",
+          "Develop and integrate Python FastAPI services for authentication, dynamic forms, and real-time dashboard data.",
+          "Use Cursor AI workflows to write, refactor, and scaffold parallel codebases across frontend and backend pipelines."
         ]
       }
     ],
@@ -246,13 +410,26 @@
         "title": "Full-Stack Web Developer Certification",
         "issuer": "SkillVertex",
         "period": "Mar 2023 – Jun 2023",
-        "topics": ["React.js", "Responsive UI Design", "REST API Integration"]
+        "topics": [
+          "React.js",
+          "Responsive UI Design",
+          "REST API Integration"
+        ]
       }
     ],
     "languages": {
-      "tamil": { "name": "Tamil", "level": "Native" },
-      "english": { "name": "English", "level": "Professional (B2+)" },
-      "french": { "name": "French", "level": "Beginner (A1)" }
+      "tamil": {
+        "name": "Tamil",
+        "level": "Native"
+      },
+      "english": {
+        "name": "English",
+        "level": "Professional (B2+)"
+      },
+      "french": {
+        "name": "French",
+        "level": "Beginner (A1)"
+      }
     }
   }
 }

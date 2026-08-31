@@ -2,6 +2,12 @@
  * Shared Type Definitions for Hari Prasanth V's Portfolio
  */
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+  imagePath?: string;
+}
+
 export interface Project {
   id: string;
   name: string;
@@ -12,14 +18,27 @@ export interface Project {
   approach: string[];
   impact: { label: string; value: string }[];
   techStack: string[];
-  imagePath: string;
+  imagePath?: string;
   projectUrl?: string;
+  relatedLinks?: ProjectLink[];
   deepDive: {
     architectureReasoning: string;
     tradeoffs: { considered: string; whyRejected: string; whyChosen: string }[];
     wouldDoDifferently: string;
     codeSnippet: string;
   };
+}
+
+export interface AdditionalProject {
+  id: string;
+  name: string;
+  type: string;
+  client: string;
+  timeline: string;
+  summary: string;
+  techStack: string[];
+  projectUrl?: string;
+  imagePath?: string;
 }
 
 export interface SkillGroup {

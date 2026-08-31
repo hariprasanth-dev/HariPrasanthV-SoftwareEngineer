@@ -9,7 +9,7 @@ import {
 
 export const PERSONAL_INFO = {
   name: "Hari Prasanth V",
-  roleTitle: "Frontend Engineer — React · Next.js · TypeScript",
+  roleTitle: "Software Engineer — React · Next.js · FastAPI · Contao CMS",
   email: "hari.prasanth.v.dev@gmail.com",
   phone: "+91 82709 89679",
   linkedin: "linkedin.com/in/v-hari-prasanth",
@@ -18,7 +18,7 @@ export const PERSONAL_INFO = {
   location: "Tiruppur, India · Open to relocation to Germany",
   visaStatus:
     "Indian citizen · EU Blue Card eligible · Visa sponsorship required",
-  noticePeriod: "15 days",
+  noticePeriod: "Immediate / 15 days",
   workMode: "On-site, Hybrid, or Remote — fully flexible",
 };
 

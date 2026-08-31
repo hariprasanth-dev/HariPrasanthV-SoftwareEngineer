@@ -9,22 +9,22 @@
     "available": "Disponible pour un poste"
   },
   "hero": {
-    "title1": "Ingénieur Frontend.",
+    "title1": "Ingénieur logiciel.",
     "title2": "Précision. Performance. Produit.",
     "cta_cv": "Télécharger le CV",
     "cta_projects": "Voir les projets",
     "badge_blue_card": "Éligible à la Carte Bleue UE · Ouvert à la mobilité",
-    "description": "Ingénieur Frontend — React · Next.js · TypeScript. Des interfaces haute performance avec une rigueur d'ingénierie.",
+    "description": "Ingénieur logiciel — React · Next.js · FastAPI · Contao CMS. Plateformes de production en immobilier, santé, ERP/CRM, e-commerce et missions européennes.",
     "stats": {
       "exp": "2+ ans d'expérience en production",
-      "apps": "3 applications en production",
+      "apps": "10+ plateformes livrées",
       "perf": "~40 % de gains de performance"
     }
   },
   "about": {
     "title": "À propos de moi",
-    "description_p1": "Je suis un ingénieur Frontend dédié à la création de produits numériques performants, accessibles et inclusifs. Mon expertise consiste à concevoir des applications React et Next.js de niveau production qui allient rigueur d'ingénierie et expériences utilisateur intuitives.",
-    "description_p2": "Fort d'une expérience dans la livraison de systèmes de production pour l'immobilier et le e-commerce, je me spécialise dans la virtualisation du DOM, l'audit de performance et la garantie de temps de réponse inférieurs à la seconde, même avec des jeux de données massifs.",
+    "description_p1": "Je suis un ingénieur logiciel dédié à la création de produits numériques performants et accessibles sur tout le cycle de vie. Mon expertise : React.js, Next.js, TypeScript et Tailwind CSS, associés à des backends Python FastAPI et des plateformes Contao CMS pour des clients européens.",
+    "description_p2": "Chez ApplogiQ, je livre des applications internes (admin, Planora) tout en déployant 6+ plateformes Contao pour Time4Digital au Luxembourg. Immobilier, santé, ERP/CRM et e-commerce : frontends modulaires, performance mesurable et livraison parallèle rapide.",
     "ownership": "Chaque ligne de code, chaque décision d'interface, chaque configuration CI/CD et chaque déploiement de ce portfolio a été conçu, écrit et livré par moi — de façon indépendante.",
     "german_market": "Je recherche un poste d'ingénieur frontend senior au sein d'une entreprise technologique allemande où la rigueur d'ingénierie, une architecture propre et des résultats mesurables sont la norme.",
     "languages": "Langues"
@@ -34,13 +34,16 @@
   },
   "projects": {
     "title": "Vitrine de projets",
-    "subtitle": "Travail en production. Clients réels. Résultats mesurables.",
+    "subtitle": "Systèmes en production : CMS européens, ERP interne, immobilier, santé et commerce — responsabilité de bout en bout, URLs live, résultats défendables en entretien.",
     "challenge": "Le défi :",
     "approach": "L'approche :",
     "impact": "Impact",
     "btn_deep_dive": "Analyse technique ↓",
     "btn_visit": "Visiter le site",
-    "btn_arch": "Voir l'architecture"
+    "btn_arch": "Voir l'architecture",
+    "related_sites": "Sites live associés",
+    "additional_title": "Autres livrables",
+    "additional_subtitle": "Interfaces CRM, IIoT et santé livrées en parallèle du flux produit — même exigence de production."
   },
   "deep_dives": {
     "title": "Analyses techniques",
@@ -88,7 +91,7 @@
   "guide": {
     "hero": {
       "title": "Commencer ici",
-      "text": "Voici Hari — ingénieur frontend axé sur la précision, la performance et le produit."
+      "text": "Voici Hari — ingénieur logiciel axé sur React, Next.js, FastAPI et le CMS en production."
     },
     "about": {
       "title": "À propos",
@@ -100,7 +103,7 @@
     },
     "projects": {
       "title": "Projets",
-      "text": "Travaux clients en production avec impact mesurable — Crayoon, Vigilance et ShopQ."
+      "text": "Travaux clients et entreprise — Time4Digital, Planora, TerraVista, Crayoon et plus."
     },
     "deep_dives": {
       "title": "Deep dives",
@@ -108,7 +111,7 @@
     },
     "experience": {
       "title": "Expérience",
-      "text": "Travail frontend chez ApplogiQ sur SaaS, immobilier et e-commerce."
+      "text": "Ingénierie logicielle chez ApplogiQ — clients CMS européens plus ERP, CRM et commerce internes."
     },
     "education": {
       "title": "Formation",
@@ -125,110 +128,271 @@
   },
   "portfolio": {
     "personalInfo": {
-      "roleTitle": "Ingénieur Frontend — React · Next.js · TypeScript",
+      "roleTitle": "Ingénieur logiciel — React · Next.js · FastAPI · Contao CMS",
       "location": "Tiruppur, Inde · Ouvert à une relocalisation en Allemagne",
       "visaStatus": "Citoyen indien · Éligible à la Carte Bleue UE · Parrainage de visa requis",
       "workMode": "Sur site, hybride ou à distance — totalement flexible"
     },
     "projects": {
-      "crayoon": {
-        "type": "Plateforme d'entreprise de gestion d'uniformes & e-commerce",
-        "client": "ApplogiQ (Client en production)",
-        "problem": "Les écoles et les clients entreprises n'avaient aucun système unifié pour gérer les catalogues d'uniformes, les allocations de tailles et le traitement des commandes — ce qui entraînait des erreurs manuelles et des cycles de livraison lents.",
+      "applogiq": {
+        "type": "Site corporate & plateforme d'administration interne",
+        "client": "ApplogiQ (entreprise interne)",
+        "problem": "Le site public et l'admin tournaient comme deux produits déconnectés. Contenus marketing, leads entrants et données internes vivaient dans des modèles différents — applogiq.org ne pouvait pas être un vrai moteur d'acquisition, et les opérateurs ne pouvaient pas traiter la demande depuis une seule console.",
         "approach": [
-          "Conception d'un système complet de gestion d'uniformes et de e-commerce.",
-          "Création de plus de 20 composants React réutilisables partagés entre le web et le mobile.",
-          "Intégration d'un backend FastAPI pour le traitement des commandes en temps réel et les mises à jour d'inventaire.",
-          "Co-auteur d'une stratégie Jest + React Testing Library pour une couverture de 100 % des formulaires critiques."
+          "Refonte d'applogiq.org et de l'admin interne comme deux frontends sur un contrat de données partagé : Next.js pour le SEO et le routage du site marketing, un admin client-driven pour les opérateurs.",
+          "UI React + TypeScript + Tailwind modulaire pour que pages marketing, capture de leads et tableaux admin partagent un langage d'interaction, pas deux design systems.",
+          "Payloads de leads du site public branchés sur les workflows admin : la demande est capturée, revue et traitée dans une seule boucle."
         ],
         "impact": [
-          { "label": "Temps de dev UI", "value": "↓ 30 %" },
-          { "label": "Confiance anti-régression", "value": "↑ 60 %" }
+          {
+            "label": "Surfaces unifiées",
+            "value": "Site + Admin"
+          },
+          {
+            "label": "Statut",
+            "value": "En production"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "J'ai choisi Next.js pour son routage intégré et ses capacités SEO pour le catalogue public, tout en conservant le tableau de bord de gestion interne strictement côté client afin d'optimiser les personnalisateurs d'uniformes très riches en état.",
+          "architectureReasoning": "J'ai traité le site public et l'admin comme deux consommateurs d'un contrat, pas deux produits. Next.js gère le routage et le SEO ; l'admin reste riche en interactions côté client pour que les opérateurs gèrent contenus, leads et opérations sans rechargement. C'est le modèle de rendu par surface que les recruteurs attendent — pas une SPA unique pour tout.",
           "tradeoffs": [
             {
-              "considered": "Redux pour l'état",
-              "whyRejected": "Surcharge de boilerplate pour un cycle de développement rapide",
-              "whyChosen": "React Query + Context API"
+              "considered": "CMS séparé pour le site marketing",
+              "whyRejected": "Aurait figé site et admin sur deux modèles de contenu et recréé la déconnexion initiale",
+              "whyChosen": "Contrat d'API et motifs d'UI partagés sur les deux surfaces"
             }
           ],
-          "wouldDoDifferently": "J'aurais introduit plus tôt une structure monorepo pour partager les types plus fluidement entre le backend FastAPI et le frontend React."
+          "wouldDoDifferently": "J'extrairais un design system partagé dès le premier jour pour que tokens, formulaires et tableaux ne divergent jamais."
+        }
+      },
+      "planora": {
+        "type": "ERP de workflows internes · RBAC & ops temps réel",
+        "client": "ApplogiQ (entreprise interne)",
+        "problem": "Les opérations internes n'avaient pas de system of record pour les rôles, les modules automatisés et l'état de travail live. Les handoffs vivaient dans le chat et les tableurs — les permissions étaient du savoir tribal, personne ne voyait la même vérité opérationnelle.",
+        "approach": [
+          "Conception de Planora comme plateforme full-stack de workflows : vues React/Next.js, services FastAPI, et un modèle de permissions que les nouveaux modules héritent au lieu de réinventer.",
+          "Contrôle d'accès basé sur les rôles à la frontière du module : admins, opérateurs et viewers ne voient que les workflows qu'ils ont le droit d'exécuter.",
+          "Cursor AI pour scaffolder des tranches full-stack cohérentes en parallèle, puis durcissement manuel de l'auth, de la sync d'état temps réel et des contrats partagés."
+        ],
+        "impact": [
+          {
+            "label": "Contrôle d'accès",
+            "value": "Par rôles (RBAC)"
+          },
+          {
+            "label": "État opérationnel",
+            "value": "Sync temps réel"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Planora devait livrer beaucoup de modules opérationnels en parallèle sans devenir un flocon de permissions par écran. Cursor AI a scaffoldé des tranches cohérentes — vues React, endpoints FastAPI, contrôles de permissions — puis j'ai durci auth et state à la main. Les gardes vivent à la frontière du module. C'est la différence entre un dashboard et un produit interne.",
+          "tradeoffs": [
+            {
+              "considered": "SaaS de workflow du marché",
+              "whyRejected": "Impossible d'aligner rôles internes et état opérationnel temps réel sans personnalisation lourde",
+              "whyChosen": "Plateforme React + FastAPI sur mesure avec scaffolding par prompts et contrat RBAC partagé"
+            }
+          ],
+          "wouldDoDifferently": "J'introduirais plus tôt un bus d'événements typé pour que mises à jour temps réel et historique d'audit partagent un contrat."
+        }
+      },
+      "time4digital": {
+        "type": "Portefeuille CMS Contao multi-marques européen",
+        "client": "Time4Digital (Luxembourg)",
+        "problem": "Une agence luxembourgeoise devait livrer six sites clients ou plus en parallèle — architecture, transport médical, retail et l'agence elle-même. Chaque marque devait rester distincte, multilingue (DE/FR/EN) et éditable par des équipes déjà sur Contao — pas un rebuild headless.",
+        "approach": [
+          "Build, customisation et déploiement de 6+ plateformes Contao CMS avec layouts, formulaires et catalogues de services réutilisables pour des clients LU/DE.",
+          "Livraison de TS-Concept (architecture), Luxambulance (transport médical d'urgence), Modetreff (retail) et la présence Time4Digital sur un kit de modules maintenable.",
+          "CSS/JS spécifiques à la marque sur une base CMS partagée : les éditeurs publient sans nouveau stack par client — le modèle de livraison des agences européennes."
+        ],
+        "impact": [
+          {
+            "label": "Plateformes livrées",
+            "value": "6+"
+          },
+          {
+            "label": "Marchés",
+            "value": "Luxembourg / Allemagne"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Contao était le bon CMS : les éditeurs et clients LU/DE travaillent déjà dans cet écosystème. Layouts modulaires, contenus DE/FR/EN et catalogues de services riches en formulaires correspondent aux types Contao. Pour un recruteur européen, le signal est : je livre dans le CMS que le marché utilise, pas seulement dans une app React greenfield.",
+          "tradeoffs": [
+            {
+              "considered": "WordPress ou rebuild Next.js par client",
+              "whyRejected": "Bloat plugins WordPress et structure éditoriale plus faible ; un rebuild headless aurait ralenti des équipes déjà formées à Contao",
+              "whyChosen": "Contao CMS avec modules réutilisables et styling par marque"
+            }
+          ],
+          "wouldDoDifferently": "J'extrairais plus tôt un kit de modules Contao et des design tokens pour garder grilles, formulaires et espacements cohérents sur les six sites."
+        }
+      },
+      "terravista": {
+        "type": "Plateforme design-build immobilier de luxe",
+        "client": "ApplogiQ (client en production)",
+        "problem": "Terra Vista Construction avait besoin d'une plateforme publique orientée conversion pour des maisons de luxe en Arizona — services, preuve architecturale et prise de rendez-vous. Une brochure statique aurait perdu les visiteurs à fort intent avant un Let’s Talk.",
+        "approach": [
+          "Modules de services React pour maisons sur mesure, locations vacances, démolition/reconstruction et rénovation — composables pour itérer sans réécrire la page.",
+          "Galeries de portfolios et flux de consultation Let’s Talk sur terravistahome.com, mobile-first pour un parcours high-ticket.",
+          "UI Bootstrap entièrement responsive pour les marchés desert, mountain et woods, sans bloquer le lancement sur un index de listings."
+        ],
+        "impact": [
+          {
+            "label": "Conversion principale",
+            "value": "Réservation Let’s Talk"
+          },
+          {
+            "label": "Marché live",
+            "value": "Arizona · terravistahome.com"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "TerraVista est une expérience immobilier marketing : marque, preuve, puis booking. React + Bootstrap a livré modules, galeries et formulaires rapidement, avec une langue visuelle stable sur mobile. Portfolios et booking restent des composants indépendants — vélocité avec une frontière de composition claire.",
+          "tradeoffs": [
+            {
+              "considered": "Next.js SSR pour le SEO des listings",
+              "whyRejected": "Le lancement couvrait marque, services et booking — pas un index de listings crawlable",
+              "whyChosen": "SPA React avec Bootstrap pour la vitesse et le responsive"
+            }
+          ],
+          "wouldDoDifferently": "Si les pages listing grandissent, je déplacerais le catalogue public vers Next.js App Router (SSR + metadata) et garderais le wizard de booking en îlot client."
+        }
+      },
+      "crayoon": {
+        "type": "ERP uniformes multi-clients & plateforme commerce",
+        "client": "ApplogiQ (client en production)",
+        "problem": "Écoles et entreprises n'avaient pas de système unique pour catalogues, allocation de tailles, inventaire et fulfilment. Les commandes étaient manuelles, les erreurs se multipliaient, et la vérité stock lagguait toujours d'un tableur derrière l'entrepôt.",
+        "approach": [
+          "Plateforme d'opérations en Next.js, React, TypeScript et Tailwind : catalogues, flux de commandes et customizers de tailles en modules réutilisables.",
+          "Python FastAPI + PostgreSQL comme source de vérité pour commandes et inventaire — l'UI ne duplique jamais les règles métier.",
+          "Catalogue public (routage/SEO) séparé d'un dashboard côté client pour que les customizers riches en état restent réactifs sous charge réelle."
+        ],
+        "impact": [
+          {
+            "label": "Vitesse de livraison UI",
+            "value": "↓ 30 %"
+          },
+          {
+            "label": "Vérité inventaire",
+            "value": "Temps réel"
+          }
+        ],
+        "deepDive": {
+          "architectureReasoning": "Next.js pour le routage et le SEO du catalogue public ; le dashboard interne reste côté client pour des customizers riches en état. FastAPI + PostgreSQL possèdent les écritures commandes/inventaire. React Query pour le server state + Context pour l'UI state a battu une couche Redux qui aurait ralenti un cycle ERP multi-clients.",
+          "tradeoffs": [
+            {
+              "considered": "Redux pour tout l'état applicatif",
+              "whyRejected": "Surcharge de boilerplate pour un cycle de livraison multi-clients rapide",
+              "whyChosen": "React Query pour le server state + Context API pour l'état UI"
+            }
+          ],
+          "wouldDoDifferently": "J'aurais introduit plus tôt un monorepo pour partager les types entre FastAPI et React afin que les contrats d'inventaire ne dérivent pas."
         }
       },
       "vigilance": {
-        "type": "Système d'évaluation de sécurité & de reporting",
-        "client": "ApplogiQ (Client en production)",
-        "problem": "Les responsables terrain utilisaient des outils papier pour les évaluations de sécurité des biens, ce qui entraînait une génération de rapports lente et sujette aux erreurs sur mobile.",
+        "type": "ERP d'évaluation sécurité terrain · performance mobile",
+        "client": "ApplogiQ (client en production)",
+        "problem": "Les managers terrain évaluaient sécurité et CCTV sur papier, puis ressaisissaient les rapports sur tablette. Au-delà de quelques centaines de lignes, l'UI calait sur des réseaux mobiles faibles — les inspections se terminaient au bureau, pas sur site.",
         "approach": [
-          "Conception d'une application web orientée données pour réaliser des évaluations de risques.",
-          "Mise en œuvre de la virtualisation du DOM et du lazy loading pour de grands jeux de données (1000+ enregistrements).",
-          "Conception de tableaux de bord interactifs et de workflows de formulaires multi-étapes."
+          "Application d'inspection tablette/mobile-first avec formulaires multi-étapes et dashboards sur des APIs REST FastAPI.",
+          "Virtualisation DOM et lazy loading pour que 1 000+ lignes d'évaluation restent triables sans round-trips supplémentaires sur le terrain.",
+          "Layouts Bootstrap denses et touch-first pour que les inspecteurs terminent les rapports sur site."
         ],
         "impact": [
-          { "label": "Chargement rapport mobile", "value": "↓ 40 %" },
-          { "label": "Précision de saisie", "value": "↑ 95 %" }
+          {
+            "label": "Chargement gros volumes",
+            "value": "↓ 40 %"
+          },
+          {
+            "label": "Précision de saisie",
+            "value": "↑ 95 %"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "J'ai choisi la virtualisation du DOM plutôt que le scroll infini car les tableaux d'évaluation exigeaient un tri cohérent sur des milliers de lignes sans déclencher de multiples requêtes réseau sur des réseaux mobiles de terrain.",
+          "architectureReasoning": "Virtualisation DOM plutôt que scroll infini : les tableaux d'évaluation devaient trier des milliers de lignes sans requêtes extra sur des réseaux de terrain. Le scroll infini aurait masqué le problème de tri derrière la pagination. Bootstrap a gardé la mise en page tablette dense et tactile. La performance est le produit : un rapport qui charge sur le terrain se remplit sur le terrain.",
           "tradeoffs": [
             {
-              "considered": "Tableau standard",
+              "considered": "Tableau HTML standard rendant toutes les lignes",
               "whyRejected": "Performances mobiles dégradées au-delà de 500 enregistrements",
-              "whyChosen": "Liste virtualisée"
+              "whyChosen": "Liste virtualisée — seules les lignes visibles touchent le DOM"
             }
           ],
-          "wouldDoDifferently": "Mettre en place une approche offline-first via les capacités PWA pour gérer les évaluations terrain dans des zones sans connectivité."
+          "wouldDoDifferently": "PWA offline-first pour les évaluations sans connectivité, puis sync au retour réseau."
         }
       },
       "shopq": {
-        "type": "Interface SaaS e-commerce de landing & conversion",
-        "client": "ApplogiQ (Client en production)",
-        "problem": "Le client avait besoin d'une plateforme de landing à fort taux de conversion pour soutenir le lancement go-to-market de son système de gestion de catalogues.",
+        "type": "Plateforme SaaS e-commerce GTM & conversion",
+        "client": "ApplogiQ (client en production)",
+        "problem": "ShopQ avait besoin d'une surface de lancement publique à forte conversion pour une plateforme no-code de catalogues et boutiques. Réservation de démo, pricing et preuve produit devaient marcher sur chaque appareil avant la fermeture de la fenêtre GTM — un design system custom lent aurait raté le lancement.",
         "approach": [
-          "Livraison d'une UI responsive et component-driven avec React.js et Bootstrap.",
-          "Mise en œuvre de formulaires de capture de leads validés et de démos produit interactives.",
-          "Optimisation des parcours utilisateur pour les conversions de réservation de démo."
+          "Landing React + Bootstrap component-driven avec catalogue, pricing, FAQ et réservation de démo sous deadline GTM serrée.",
+          "Capture de leads validée Formik + Yup pour que chaque demande de démo soit actionnable par les sales immédiatement.",
+          "Parcours de conversion (valeur → preuve → offre → contact) optimisé pour la fiabilité multi-appareils, sans retarder le lancement pour un système de tokens custom."
         ],
         "impact": [
-          { "label": "Taux de conversion", "value": "↑ 25 %" },
-          { "label": "Compatibilité multi-appareils", "value": "100 %" }
+          {
+            "label": "Conversion démo",
+            "value": "↑ 25 %"
+          },
+          {
+            "label": "Couverture appareils",
+            "value": "100 %"
+          }
         ],
         "deepDive": {
-          "architectureReasoning": "J'ai choisi Bootstrap pour cette landing page spécifique en raison du besoin de prototypage rapide et de l'accès à une large bibliothèque de composants de conversion préconstruits pour respecter un délai go-to-market strict de 2 semaines.",
+          "architectureReasoning": "Bootstrap parce que le job était la conversion sous deadline, pas une étude de design system. Les primitives de layout et de formulaires ont laissé du temps pour la capture de leads et le parcours démo. Pour un GTM, un funnel qui marche bat un bundle CSS plus léger qui arrive après la fenêtre de lancement.",
           "tradeoffs": [
             {
-              "considered": "CSS personnalisé",
-              "whyRejected": "Contraintes de time-to-market",
-              "whyChosen": "Couche utilitaire Bootstrap"
+              "considered": "CSS / design tokens custom from scratch",
+              "whyRejected": "Le time-to-market aurait fait rater la fenêtre de lancement",
+              "whyChosen": "Couche utilitaire Bootstrap pour la vélocité et le responsive cohérent"
             }
           ],
-          "wouldDoDifferently": "J'utiliserais Tailwind CSS plutôt que Bootstrap pour un meilleur contrôle des design tokens et un bundle CSS final plus léger."
+          "wouldDoDifferently": "Après le lancement, je migrerais vers Tailwind pour des tokens plus stricts et un bundle CSS plus léger, en gardant la même architecture de conversion."
         }
+      }
+    },
+    "additionalProjects": {
+      "leadsynq": {
+        "type": "CRM de gestion de leads · pipeline & analytics",
+        "client": "ApplogiQ (client en production)",
+        "summary": "Frontend CRM en production qui capture, score et route les leads entrants : Contacts → Prospects → Deals → Clients. Dashboards par rôles, import CSV/XLSX, états de tâches et vues pipeline — pour que les équipes sales cessent de perdre des conversions dans les boîtes mail."
+      },
+      "tecosoft": {
+        "type": "Landing produit IIoT / Industrie 4.0",
+        "client": "ApplogiQ (client en production)",
+        "timeline": "Livré",
+        "summary": "Landing React orientée conversion pour un produit IIoT / Industrie 4.0 — positionnement technique, storytelling de capacités et CTAs de demande pour un acheteur B2B qui a besoin de preuve avant l'appel sales."
+      },
+      "ayushyaai": {
+        "type": "UI plateforme santé IA · admission patient",
+        "client": "ApplogiQ (client en production)",
+        "timeline": "Livré",
+        "summary": "UI React santé pour une admission patient multilingue, voice-first : capture structurée des symptômes, formulaires et synthèses prêtes pour le clinicien — le médecin arrive avec du contexte, pas une fiche vide."
       }
     },
     "skillGroups": {
       "frontend": "Frontend",
-      "styling": "Styles",
+      "styling": "Styles & UI",
       "stateData": "État & Données",
       "testing": "Tests",
-      "backendApis": "Backend / APIs",
+      "backendApis": "Backend & CMS",
       "infrastructure": "Infrastructure",
-      "tooling": "Outils",
+      "tooling": "IA & outils d'ingénierie",
       "performance": "Performance"
     },
     "experience": [
       {
-        "title": "Ingénieur logiciel — Frontend",
+        "title": "Ingénieur logiciel",
         "company": "ApplogiQ",
         "location": "Tiruppur, Inde",
         "period": "Juil. 2024 – Présent",
         "responsibilities": [
-          "Développement de solutions frontend prêtes pour la production dans les secteurs immobilier, SaaS, santé et e-commerce.",
-          "Intégration d'APIs REST basées sur FastAPI dans 3 applications en production, avec livraison des fonctionnalités prioritaires dans les délais.",
-          "Maintien de la compatibilité cross-navigateur et d'une architecture UI component-based.",
-          "Configuration de pipelines CI/CD avec GitHub Actions pour automatiser les workflows de build et de tests."
+          "Charges de production en parallèle : 6+ plateformes clients européennes pour Time4Digital (Luxembourg) et applications internes (Admin ApplogiQ, Planora).",
+          "Construction, personnalisation et déploiement de plateformes Contao CMS (layouts modulaires, formulaires, catalogues de services) pour des clients européens.",
+          "Frontends modulaires React.js, Next.js et Tailwind CSS, avec ~30 % de gain sur le rendu et la vitesse UI.",
+          "Services Python FastAPI pour l'authentification, les formulaires dynamiques et les dashboards temps réel.",
+          "Workflows Cursor AI pour écrire, refactorer et scaffolder des codebases frontend et backend en parallèle."
         ]
       }
     ],
@@ -246,13 +410,26 @@
         "title": "Certification Full-Stack Web Developer",
         "issuer": "SkillVertex",
         "period": "Mar. 2023 – Juin 2023",
-        "topics": ["React.js", "Responsive UI Design", "REST API Integration"]
+        "topics": [
+          "React.js",
+          "Responsive UI Design",
+          "REST API Integration"
+        ]
       }
     ],
     "languages": {
-      "tamil": { "name": "Tamoul", "level": "Langue maternelle" },
-      "english": { "name": "Anglais", "level": "Professionnel (B2+)" },
-      "french": { "name": "Français", "level": "Débutant (A1)" }
+      "tamil": {
+        "name": "Tamoul",
+        "level": "Langue maternelle"
+      },
+      "english": {
+        "name": "Anglais",
+        "level": "Professionnel (B2+)"
+      },
+      "french": {
+        "name": "Français",
+        "level": "Débutant (A1)"
+      }
     }
   }
 }
